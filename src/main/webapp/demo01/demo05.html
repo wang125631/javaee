@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Date日期对象</title>
+</head>
+<script type="text/javascript">
+	/*
+		* Date日期对象
+		var date = new Date();	当前的日期
+		
+		* toLocaleString()	转换本地的日期格式
+		* toLocaleDateString()	只包含日期
+		* toLocaleTimeString()	只包含时间
+		
+		* getDate()			返回一个月中的某一天（1-31）
+		* getDay()			返回一周中的某一天(0-6)
+		* getMonth()		返回月份（0-11）	+1
+		* getFullYear()		返回年份
+		
+		* getTime()			返回毫秒数
+		* setTime()			通过毫秒数获取日期
+			* var date3 = new Date(1415937050973);
+		
+		* parse(str)		解析字符串，返回毫秒数
+			Date.parse(str);
+	*/
+	var date=new  Date();
+	println(date.toLocaleString());
+	println(date.toLocaleDateString());
+	println(date.toLocaleTimeString());
+	
+	println(date.getDate());
+	println(date.getFullYear());
+	println(date.getMonth()+1);
+	println(date.getDate());
+	println(date.getTime());
+	
+	println(Date.parse("2018/1/3"));
+	function println(a){
+		document.write(a);
+		document.write("<br>");
+	}
+
+</script>
+<body>
+	
+</body>
+</html>

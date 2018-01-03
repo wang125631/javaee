@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>js的动态函数与匿名函数</title>
+</head>
+<script type="text/javascript">
+	/*
+	js的动态函数
+			function say(){
+		alert('Hello js');
+	}
+	js的匿名 函数
+		没有名称的函数
+		Javascript的数据类型有：
+		 
+		1. Number 数字类型
+		2. String 字符串类型
+		3. Boolean 布尔类型
+		4. Function 函数
+		5. Object 对象
+		6. Null
+		7. Undefined 没有定义类型
+	
+		js 中对象即函数
+	*/
+	var p1="x,y";
+	var p2="var sum;sum = x+y; return sum";
+	var add =new Function(p1,p2);
+	var sum=add(4,5);
+	alert(sum);
+	
+	
+	function a(x,y){
+		var n=x+y;
+		return n;
+	}
+	alert(a(6,7));
+	
+</script>
+<body>
+
+</body>
+</html>

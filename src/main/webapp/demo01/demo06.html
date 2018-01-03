@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> Math日期对象</title>
+</head>
+<script type="text/javascript">
+	function out(a){
+		document.write(a);
+		document.write("<br>");
+		}
+	/*
+	 math对象（静态的方法）
+			* ceil(x)		上舍入
+			* floor(x)		下舍入
+			* round(x)		四舍五入
+			* random()		0-1的随机数
+	*/
+	out(Math.ceil(11.1));
+	out(Math.floor(11.9));
+	out(Math.round(11.1));
+	out(Math.round(11.9));
+	
+	for(var i=0;i<10;i++){
+		out(Math.round(Math.random()*10));
+	}
+	
+</script>
+<body>
+	
+</body>
+</html>
