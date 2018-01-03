@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>window对象</title>
+<script type="text/javascript">
+	/*
+	* 		alert()		弹出提示框
+			* confirm("参数")		询问框
+				* 提供俩按钮，确定和取消
+				* 如果点击是确定，返回true，如果点击取消，返回false
+				
+			* moveBy()			移动浏览器
+				
+			* setInterval("函数",毫秒值)		定时相关的
+				* 每隔毫秒值执行一次函数
+				* 返回唯一的id值
+				
+			* setTimeout("函数",毫秒值)		
+				* 到了毫秒值后执行一次函数
+				* 返回唯一的id值
+				
+			* 清除定时
+				clearInterval(id的值)		
+				clearTimeout()
+				
+			* close()	关闭浏览器的窗口
+			* open()	打开浏览器窗口
+			
+			* 属性：
+				* opener 返回对创建此窗口的窗口的引用。 
+				* win  open()	弹出baidu的窗口
+					
+					在baidu窗口中  baidu.opener	得到了win的引用。
+					
+			* document对象方法
+				* document.getElementById("nameId"); 获取到是input标签的对象
+	*/
+			function run01(){
+				window.alert("window alert");	
+				}
+			function run02(){
+				if(window.confirm("window confirm,确定 alert yes,else alert no ")){
+					alert("yes");
+				}else{
+					alert("no");
+				}
+			}
+			function run03(){
+				window.moveBy(80,80);
+			}
+			function run04(){
+				siv=window.setInterval("run01()",5000);
+			}
+			function run05(){
+				window.setTimeout("run01()",1000);
+			}
+			function run06(){
+				window.clearInterval(siv);
+			}
+			function run07(){
+				window.open("http://www.baidu.com","","width=400,height=500");
+			}
+</script>
+</head>
+<body>
+	<input type="button" value="alert" onclick="run01()">
+	<input type="button" value="confirm" onclick="run02()">
+	<input type="button" value="moveBy" onclick="run03()">
+	<input type="button" value="setInterval" onclick="run04()"> 
+	<input type="button" value="setTimeout" onclick="run05()"> 
+	<input type="button" value="clearInterval" onclick="run06()"> 
+	<input type="button" value="open" onclick="run07()"> 
+</body>
+</html>

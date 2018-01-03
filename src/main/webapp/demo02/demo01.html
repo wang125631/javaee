@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>获取dom节点</title>
+</head>
+<script type="text/javascript">
+	/* 
+	getElementById("id的值");	（经常使用的）		通过元素的id的属性获取元素（标签）对象。
+	getElementsByName("name属性值");		通过名称获取元素对象的集合（返回数组）
+	getElementsByTagName("标签名称");	通过标签名称获取元素对象的集合（返回数组）
+	*/ 
+	window.onload=function(){
+		var userId = document.getElementById("userId").value;
+		alert(userId);
+		
+		var alias=document.getElementsByName("swk");
+		alert(alias.length);
+		
+		var inputs=document.getElementsByTagName("input");
+		alert(inputs.length);		
+		
+	}
+	
+</script>
+<body>
+	<input type="text" id="userId" value="userId">
+	<input type="text" name="swk" value="卡卡罗特">
+	<input type="text" name="swk" value="孙悟空">
+	<input type="text" name="swk" value="美猴王">
+</body>
+</html>

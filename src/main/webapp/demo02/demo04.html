@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Node对象</title>
+</head>
+<script type="text/javascript">
+	/*
+							元素				属性				文本
+			nodeName		大写的标签名称		属性名称			#text
+			nodeType		1				2				3
+			nodeValue		null			属性的值			文本的内容
+			
+			* parentNode		获取父节点
+			* childNodes		所有子节点
+			* firstChild		第一个子节点
+			* lastChild			最后一个子节点
+			* nextSibling		下一个兄弟节点
+			* previousSibling	上一个兄弟节点
+			
+			* appendChild(node)			父节点调用，在末尾添加子节点
+			* insertBefore(new,old)		父节点调用，在指定节点之前添加子节点
+			* replaceChild(new,old)		父节点调用，替换节点
+			* removeChild(node)			父节点调用,删除节点
+			
+			* cloneNode(boolean)		不是父节点调用,复制节点
+				* boolean	：如果是true，复制子节点
+							：如果是false，不复制子节点，默认是false
+	*/
+	function out(a){
+		
+	}
+	window.onload=function (){
+		var nameId=document.getElementById("nameId");
+		
+	}
+
+	
+</script>
+<body>
+
+<input type="text" id="nameId" value="nickName" />
+	
+	<span id="spanId">
+		我span
+	</span>
+	
+	
+	<ul>
+		<li>北</li>
+		<li id="sh">上</li>
+		<li>广</li>
+	</ul>
+
+	
+	<hr/>
+	
+	<button id="btnId">
+		button
+	</button>
+	
+	<span id="spanId2"></span>
+	
+
+</body>
+</html>
