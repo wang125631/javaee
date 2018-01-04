@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- spring-demo01 -->
+	
+	<bean id="helloService" class="com.wpx.spring.demo01.HelloServiceImpl">
+			<property name="name" value="wpx"></property>
+	</bean>
+	
+	<!-- spring-demo02 -->
+	
+	<bean id="bean01" class="com.wpx.spring.demo02.Bean01">
+		<!-- 默认为无参构造 -->
+	</bean>
+		<!-- 使用静态工厂 -->
+	<bean id="bean02" class="com.wpx.spring.demo02.BeanFactory02" factory-method="getInstance"> 
+	</bean>
+		<!-- 第三种使用实例工厂实例化 -->
+	<bean id="beanFactory03" class="com.wpx.spring.demo02.BeanFactory03"></bean>
+	<bean id="bean03" factory-bean="beanFactory03" factory-method="getInstance"></bean>
+	
+	<!-- spring-demo03 -->
+		<!-- scope指定 作用范围-->
+		<!-- singleton/单例(默认)  prototype/每次从容器中调用bean时，容器都创建一个新的实例，每次调用都相当于new一个新的对象 -->
+		<!-- request/每次http请求都会创建一个新的bean session/ 同一个session共享同一个bean，不同的session使用不同的bean。 -->
+		<!-- global session/ 同一个全局session共享一个Bean，一般用于portlet应用环境， -->
+	<bean id="customer" class="com.wpx.spring.demo03.Customer" scope="prototype"></bean>
+		<!-- spring的生命周期 -->
+	<bean id="product" class="com.wpx.spring.demo03.Product" init-method="init" destroy-method="destory"></bean>
+</beans>
