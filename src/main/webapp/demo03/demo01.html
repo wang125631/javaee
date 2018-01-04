@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JQuery基础 </title>
+<!-- 引入外部独立的jquery.js文件 -->
+	<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+<script type="text/javascript">
+	//通过原生js
+	window.onload = function(){
+		var username=document.getElementById("username");
+		alert(username.value);
+		//将dom对象转化为jquery对象
+		var $username=$(username);
+		alert($username.val());
+	}	
+	//通过jquery的方式
+	$(document).ready(function(){
+		var $username=$("#username");
+		alert($username.val());
+		//将jquery对象转化为dom对象
+		//jquery对象是一个数组对象
+		var js_arr_username=$username[0];
+		alert(js_arr_username.value);
+		//jquery提供get方法
+		var js_get_username=$username.get[0];
+		alert(js_get_username.value);
+	});
+	
+	
+	
+</script>
+</head>
+<body>
+	<input type="text" value="wpx" id="username">
+</body>
+
+</html>

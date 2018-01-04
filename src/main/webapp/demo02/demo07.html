@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>下拉列表左右添加</title>
+<style type="text/css">
+* { margin:0; padding:0; }
+div.centent {
+   float:left;
+   text-align: center;
+   margin: 10px;
+}
+span { 
+	display:block; 
+	margin:2px 2px;
+	padding:4px 10px; 
+	background:#898989;
+	cursor:pointer;
+	font-size:12px;
+	color:white;
+}
+</style>
+
+
+</head>
+<body>
+	<div class="centent">
+		<select multiple="multiple" id="select1" style="width:100px;height:160px;">
+			<option value="1">选项1</option>
+			<option value="2">选项2</option>
+			<option value="3">选项3</option>
+			<option value="4">选项4</option>
+			<option value="5">选项5</option>
+			<option value="6">选项6</option>
+			<option value="7">选项7</option>
+		</select>
+		<div>
+			<span id="add">选中添加到右边&gt;&gt;</span>
+			<span id="add_all" >全部添加到右边&gt;&gt;</span>
+		</div>
+	</div>
+	
+	<div class="centent">
+		<select multiple="multiple" id="select2" style="width: 100px;height:160px;">
+			<option value="8">选项8</option>
+		</select>
+		<div>
+			<span id="remove">&lt;&lt;选中删除到左边</span>
+			<span id="remove_all">&lt;&lt;全部删除到左边</span>
+		</div>
+	</div>
+
+</body>
+
+<script type="text/javascript">
+	/* 	
+		* 思路：把select1的option（被选中），加入到select中。
+			* select标签上有默认值
+				* selected== true，说明被中
+				
+			* 获取select1下面所有的option对象
+				* 先获取select1
+				* 再获取select1下所有的子节点
+				
+			* 循环遍历，拿到每一个，判断selected属性,如果是true，加入select2中。
+			
+		* 双击事件
+			* ondblclick
+	*/
+	
+	// 把左边选中的条目添加到右边
+	document.getElementById("add").onclick = trunRight;
+	
+	
+	// 全不添加到右边
+	document.getElementById("add_all").onclick = function(){
+		// 获取select2
+		var select2 = document.getElementById("select2");
+		// 获取select1
+		var select1 = document.getElementById("select1");
+		// 获取select1下所有的子节点
+		var options = select1.getElementsByTagName("option");
+		// 循环遍历
+		for(var i=0;i<options.length;i++){
+			var option = options[i];
+			// 添加到select2中去
+			select2.appendChild(option);
+			i--;
+		}
+	};
+	
+	// 从右边添加到左边
+	document.getElementById("remove").onclick = trunLeft;
+	
+	// 全不从右边添加到左边
+	document.getElementById("remove_all").onclick = function(){
+		// 获取select2
+		var select2 = document.getElementById("select2");
+		// 获取select1
+		var select1 = document.getElementById("select1");
+		// 获取select2下所有的子节点
+		var options = select2.getElementsByTagName("option");
+		// 循环遍历
+		for(var i=0;i<options.length;i++){
+			var option = options[i];
+			// 添加到select1中去
+			select1.appendChild(option);
+			i--;
+		}
+	};
+	
+	document.getElementById("select1").ondblclick = trunRight;
+	
+	function trunRight(){
+		// 先获取select2节点
+		var select2 = document.getElementById("select2");
+		// 先获取select1对象
+		var select1 = document.getElementById("select1");
+		// 获取select1下所有的子节点
+		var options = select1.getElementsByTagName("option");
+		// 循环遍历，获取每一个
+		for(var i=options.length-1;i>=0;i--){
+			// 获取每一个option对象
+			var option = options[i];
+			// 判断当前的option对象是否被选中（看selected是否为true）
+			if(option.selected == true){
+				// 添加到select2中
+				select2.appendChild(option);
+				// i--;
+			}
+		}
+	}
+	
+	document.getElementById("select2").ondblclick = trunLeft;
+	
+	function trunLeft(){
+		// 先获取select2节点
+		var select2 = document.getElementById("select2");
+		// 先获取select1对象
+		var select1 = document.getElementById("select1");
+		// 获取select2下所有的子节点
+		var options = select2.getElementsByTagName("option");
+		// 循环遍历，获取每一个
+		for(var i=options.length-1;i>=0;i--){
+			// 获取每一个option对象
+			var option = options[i];
+			// 判断当前的option对象是否被选中（看selected是否为true）
+			if(option.selected == true){
+				// 添加到select1中
+				select1.appendChild(option);
+				// i--;
+			}
+		}
+	}
+		
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
