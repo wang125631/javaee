@@ -35,3 +35,19 @@ demo03 -> JQuery
 	demo07.html -> JQuery选择器--子元素选择器
 	demo08.html -> JQuery选择器--表单对象属性过滤选择器
 	demo09.html -> JQuery选择器--表单选择器
+	
+	
+
+
+------------------------------------------框架类--------------------------------------------------
+
+spring
+	
+	spring.demo01 -> spring加载配置文件
+	spring.demo02 -> Bean的实例化
+	spring.demo03 -> Bean的作用范围
+	spring.demo04 -> Bean的生命周期
+	spring.demo05 -> 
+	spring.demo06 -> 
+	spring.demo07 -> 
+	
