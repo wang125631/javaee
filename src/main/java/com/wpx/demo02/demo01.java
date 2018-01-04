@@ -1,6 +1,6 @@
 package com.wpx.demo02;
 /**
- * js ä¯ÀÀÆ÷¶ÔÏóBOM
+ * js²Ù×÷dom
  * 
  * @author wangpx
  */

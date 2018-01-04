@@ -4,6 +4,35 @@
 <meta charset="UTF-8">
 <title>Node对象</title>
 </head>
+
+<body>
+
+<input type="text" id="nameId" value="nickName" />
+	
+	<span id="spanId">
+		span
+	</span>
+	
+	
+	<ul id="ulId">
+		<li>北</li>
+		<li id="sh">上</li>
+		<li id="gz">广</li>
+	</ul>
+
+	
+	<hr/>
+	
+	<button id="btnId">
+		button
+	</button>
+	
+	<span id="spanId2">
+		<p>this is span2</p>
+	</span>
+	
+
+</body>
 <script type="text/javascript">
 	/*
 							元素				属性				文本
@@ -28,39 +57,62 @@
 							：如果是false，不复制子节点，默认是false
 	*/
 	function out(a){
-		
+		document.write(a);
+		document.write("<br>");
 	}
-	window.onload=function (){
+	
+	
 		var nameId=document.getElementById("nameId");
+		document.write("<p>元素<p><br>");
+		out(nameId.nodeName);
+		out(nameId.nodeType);
+		out(nameId.nodeValue);
 		
-	}
-
-	
+		document.write("<p>属性<p><br>");
+		var attr = nameId.getAttributeNode("type");
+		out(attr);
+		out(attr.nodeName);
+		out(attr.nodeType);
+		out(attr.nodeValue);
+		
+		document.write("<p>文本<p><br>");
+		var span = document.getElementById("spanId");
+		var text=span.firstChild;
+		out(text.nodeName);
+		out(text.nodeType);
+		out(text.nodeValue);
+		
+		document.write("<p>获取父节点<p><br>");
+		var textParentNode=text.parentNode;
+		out(textParentNode.nodeName);
+		
+		document.write("<p>获取所有子节点/第一个子节点/最后一个子节点<p><br>");
+		var ulId = document.getElementById("ulId");
+		out(ulId.childNodes.length);
+		out(ulId.firstChild.nodeType);
+		out(ulId.lastChild.nodeName);
+		
+		// 复制button的按钮，添加到span标签的中间
+		var btn = document.getElementById("btnId");
+		var newbtn=btn.cloneNode(true);
+		var span2=document.getElementById("spanId2");
+		span2.appendChild(newbtn);
+		
+		// 删除节点
+		document.getElementById("sh").onclick = function(){
+			//this.parentNode.removeChild(this);
+			var sh = document.getElementById("sh");
+			var ul = sh.parentNode;
+			ul.removeChild(sh);
+			}
+		
+		//点击广用深替代
+		document.getElementById("gz").onclick = function(){
+			var ul = this.parentNode;
+			var li = document.createElement("li");
+			var text = document.createTextNode("深");
+			li.appendChild(text);
+			ul.appendChild(li);
+		}
 </script>
-<body>
-
-<input type="text" id="nameId" value="nickName" />
-	
-	<span id="spanId">
-		我span
-	</span>
-	
-	
-	<ul>
-		<li>北</li>
-		<li id="sh">上</li>
-		<li>广</li>
-	</ul>
-
-	
-	<hr/>
-	
-	<button id="btnId">
-		button
-	</button>
-	
-	<span id="spanId2"></span>
-	
-
-</body>
 </html>
