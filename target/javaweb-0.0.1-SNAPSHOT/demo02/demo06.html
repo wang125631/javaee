@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>全选/反选</title>
+</head>
+
+<body>
+	<input type="checkbox" id="boxId" onclick="selectOrNo()"/>全选/全不选<br/>
+	<input type="checkbox" name="love" />篮球<br/>
+	<input type="checkbox" name="love" />足球<br/>
+	<input type="checkbox" name="love" />排球<br/>
+	<input type="checkbox" name="love" />冰球<br/>
+	<input type="button" value="全选" onclick="selectAll()"/>
+	<input type="button" value="全不选" onclick="selectNo()"/>
+	<input type="button" value="反选" onclick="selectOth()"/>
+</body>
+<script type="text/javascript">
+		//全选
+		function selectAll(){
+			//获取所有爱好,返回数组
+			var loves=document.getElementsByName("love");
+			//遍历数组将每一个标签选中
+			for(var i=0;i<loves.length;i++){
+				var love = loves[i];
+				love.checked = true;
+			}
+		}
+		//全不选
+		function selectNo(){
+			//获取所有爱好,返回数组
+			var loves=document.getElementsByName("love");
+			//遍历数组将每一个标签取消选中
+			for(var i=0;i<loves.length;i++){
+				var love = loves[i];
+				love.checked = false;
+			}
+		}
+		// 全选/全不选
+		function selectOrNo(){
+			var box = document.getElementById("boxId");
+			// 判断，判断是否被选中
+			if(box.checked == true){
+				selectAll();
+			}else{
+				selectNo();
+			}
+		}
+		// 反选
+		function selectOth(){
+			//获取所有爱好,返回数组
+			var loves=document.getElementsByName("love");
+			//遍历爱好 如果原来为true改为false
+			for(var i=0;i<loves.length;i++){
+				var love = loves[i];
+				//love.checked = !love.checked;
+				if(love.checked == true){
+					love.checked = false;
+				}else{
+					love.checked = true;
+				}
+			}
+		}
+		
+</script>
+</html>

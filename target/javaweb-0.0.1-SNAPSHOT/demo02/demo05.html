@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>innerHTML</title>
+</head>
+
+<body>
+	<span id="spanId">
+		this is span
+	</span>
+	<input type="button" value="innerHTML" onclick="add()">
+	<span id="spanId2">
+	
+	</span>
+	
+	<h3>fetch onfocus</h3>
+	输入姓名：<input type="text" name="username" onfocus="run()" onblur="run2()"/><span id="uspan"></span><br/>
+	输入密码：<input type="password" name="password" /><span id="pspan"></span>
+	
+</body>
+<script type="text/javascript">
+	/*
+			* innerHTML属性：
+				* 获取文本内容
+				* 设置文本内容
+				
+			* 事件：
+				onclick		点击事件
+				onload		加载事件
+				onfocus		获取焦点事件
+				onblur		失去焦点事件
+				
+		var span = document.getElementById("spanId");
+		// alert(span.innerHTML);
+		
+		var span2 = document.getElementById("spanId2");
+		span2.innerHTML = "<font color='red'>这是span的区域2</font>";
+	*/
+	function add(){
+		var span = document.getElementById("spanId2");
+		span.innerHTML="<font color='red'> this is span2</font>";
+	}
+	
+		// 提示输入的信息
+		function run(){
+			var uspan = document.getElementById("uspan");
+			uspan.innerHTML = "you have to type in something ";
+		}
+		function run2(){
+			var uspan = document.getElementById("uspan");
+			uspan.innerHTML = "success";
+		}
+	
+	
+</script>
+</html>

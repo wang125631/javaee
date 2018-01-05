@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>全局函数</title>
+</head>
+<script type="text/javascript">
+	/*
+	* 全局函数
+		* eval()		可以解析字符串，执行字符串中间的js代码
+		* isNaN()		判断是否是非数字值
+		* parseInt()	解析字符串，返回整数
+		
+		果你需要编码整个URL，然后需要使用这个URL，那么用encodeURI。
+		* encodeURI()	对URL进行编码
+		* decodeURI()	解析解码
+		
+		你需要编码URL中的参数的时候，那么encodeURIComponent是最好方法
+		* encodeURIComponent()
+		* decodeURIComponent()
+		
+		如果只是编码字符串，不和URL有半毛钱关系，那么用escape
+		* escape()
+		* unescape()
+	*/
+	
+	eval("out('Hello')");
+	out(isNaN("123"));
+	out(parseInt("2l"));
+	
+	var euri=encodeURI("http://www.baidu.com");
+	out(euri);
+	out(decodeURI(euri));
+	
+	var esc=escape("http://www.baidu.com");
+	out(esc);
+	out(unescape(esc));
+	
+	var param="hello github";
+	param = encodeURIComponent(param);
+	var  url="https://github.com/wang125631?param="+param;
+	out(url);
+	
+
+	function out(a){
+		document.write(a);
+		document.write("<br>");
+	}
+	
+	
+</script>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>创建dom节点</title>
+</head>
+<script type="text/javascript">
+	/*
+	* 获取元素对象
+	* getAttribute("属性名称");	获取属性的值
+	* setAttribute("属性名称","属性的值");	设置或者修改属性的值
+	* removeAttribute("属性名称");		删除属性
+	
+* 获取元素下的所有子节点（*****）
+	* ul.getElementsByTagName();
+	*/
+	function out(a){
+		document.write(a);
+		document.write("<br>");
+	}
+	window.onload=function(){
+		//获取元素
+		var userId=document.getElementById("userId");
+		out(userId.getAttribute("value"));
+		//修改元素
+		userId.setAttribute("value","用户标志");
+		out(userId.getAttribute("value"));
+		//移除元素属性
+		userId.removeAttribute("value");
+		out(userId.getAttribute("value"));
+
+	
+</script>
+<body>
+
+
+	
+	<input type="text" id="userId" value="userId">
+	
+
+</body>
+</html>

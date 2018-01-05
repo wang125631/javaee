@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Array对象</title>
+</head>
+<script type="text/javascript">
+	/*
+		Array对象
+			声明数组
+			var arr = [12,33];
+			var arr =new Array[4,4];
+		属性: length长度
+		
+		方法:
+			concat(元素,数组) 返回新的数组
+			join(s) 用s标志,进行分隔,返回字符串
+			pop()   删除尾部的元素
+			push() 	向末尾添加一个元素,返回数组
+			sort() 排序的方法
+	*/
+	function println(a){
+		document.write(a);
+		document.write("<br>");
+	}
+	var arr=["abc","def","hig","klm"];
+	println(arr);
+	println(arr.join("-"));
+	println(arr.pop());
+	println(arr);
+	println(arr.push("nob"));
+	println(arr.concat("aaa"));
+</script>
+<body>
+	
+</body>
+</html>

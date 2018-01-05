@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+ 	<!-- 加载jdbc的配置文件 -->
+ 		<context:property-placeholder location="classpath:jdbc.properties"/>
+	<!-- 配置druid数据源 -->
+	<bean id="druidDataSource" class="com.alibaba.druid.pool.DruidDataSource">
+		<property name="username" value="${jdbc.username}"></property>
+		<property name="url" value="jdbc:mysql:///spring_demo18"></property>
+		<property name="driverClassName" value="${jdbc.driver}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+	</bean>
+
+	<!-- 持久层类 -->
+	<bean id="accountDao" class="com.wpx.spring.demo19.AccountDaoImpl">
+		<!-- 注入连接池的对象,通过连接池对象创建模板. -->
+		<property name="dataSource" ref="druidDataSource"></property>
+	</bean>
+	<!-- 业务层类 -->
+	<bean id="accountService" class="com.wpx.spring.demo19.AccountServiceImpl">
+		<property name="accountDao" ref="accountDao"></property>
+	</bean>	
+	<!-- 配置事务管理器 -->
+	<bean id="dataSourceTransactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="druidDataSource"></property>
+	</bean>
+	
+	<!-- 配置生成事务代理对象 -->
+	<bean id="transactionProxy" class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<!-- 目标对象 -->
+		<property name="target" ref="accountService"></property>
+		<!-- 注入事务管理 -->
+		<property name="transactionManager" ref="dataSourceTransactionManager"></property>
+		<!-- 事务的属性设置 -->
+		<property name="transactionAttributes">
+			<props>
+				<prop key="transfer">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

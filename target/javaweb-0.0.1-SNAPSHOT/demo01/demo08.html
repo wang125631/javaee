@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BOM对象</title>
+<script type="text/javascript">
+	/*
+	
+	Window  		窗口对象（*****）
+			Navigator 		和浏览器版本相关的对象（**）
+				* userAgent	获取浏览器的相关的信息
+				* window.navigator.userAgent	window可以省略不写
+			
+			Screen 			和屏幕相关的对象（-*）
+			
+			History 		和浏览器历史相关（**）
+				* back()		返回上一个页面
+				* forward()		去下一个页面
+				
+				* go()
+					* 传参数	go(1)	等于forward()	
+							go(-1)	等于back()
+					
+			Location 		和浏览器地址相关的对象（***）
+				* href	获取和设置浏览器的路径（***）
+				
+			* 事件
+				* onclick	点击事件
+				* 值的写法：
+*/
+	function run01(){
+		alert(window.navigator.userAgent);
+	}
+	function run02(){
+		window.history.back();
+		//history.go(-1);
+	}
+	function run03(){
+		window.history.forward();
+		//history.go(1);
+	}
+	function run04(){
+		window.location.href="http://www.baidu.com";
+	}
+</script>
+</head>
+<body>
+	<input type="button" value="浏览器信息" onclick="run01()">
+	<input type="button" value="上一页" onclick="run02()"> 
+	<input type="button" value="下一页" onclick="run03()"> 
+	<input type="button" value="百度一下" onclick="run04()">
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>string对象</title>
+</head>
+<script type="text/javascript">
+	function println(a){
+		document.write(a);
+		document.write("<br>");
+	}
+/*String 对象
+		var str = "abc";
+		var str = new String("abc");
+	
+	属性: length:字符串的长度
+	方法:
+		和HTML相关的方法
+		bold()   粗体显示
+		fontcolor(color)	参数是必须的，设置字体的颜色
+		 fontsize(size)		设置字体的大小（1-7）
+		 italics()				斜体
+		 link(url)				设置链接
+		 sub()					下标
+		 sup()					上标
+		 
+	  和java中String对象类似的
+		 charAt(index)				返回指定位置的字符
+		 indexOf(str,fromIndex)	检索字符串，没有返回-1
+		 lastIndexOf(str,fromIndex)	从后向前检索字符串
+		 replace(要替换的字符串,替换成啥)		
+		
+		 substring(start,stop)				截取字符串
+		 substr(start,length)				截取字符串，从哪开始，截取多长
+	*/
+	var str="Hello World";
+	println(str.bold());
+	println(str.fontcolor("red"));
+	println(str.fontsize(2));
+	println(str.italics());
+	println(str.link("http://www.baidu.com"));
+	println("2"+"2".sub());
+	println("2"+"2".sup());
+	
+	println(str.charAt(3));
+	println(str.indexOf("l",3));
+	println(str.lastIndexOf("l",1));
+	println(str.replace("l","h"));
+	println(str.substring(1,4));
+	println(str.substr(1,2));
+</script>
+<body>
+	
+</body>
+</html>

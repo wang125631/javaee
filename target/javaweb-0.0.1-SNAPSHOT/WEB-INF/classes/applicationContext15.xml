@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+	<!-- 定义被增强的类 -->
+	<bean id="studentDao" class="com.wpx.spring.demo15.StudentDao"></bean>
+	<!-- 定义切面 -->
+	<bean id="myAspect" class="com.wpx.spring.demo15.MyAspect"></bean>
+	<!-- 定义aop配置 -->
+	<aop:config>
+		<!-- 定义切点 -->
+		<aop:pointcut expression="execution(* com.wpx.spring.demo15.StudentDao.add(..))" id="mypointcut"/>
+		<aop:aspect ref="myAspect">  
+			<!-- 前置通知 -->
+			<aop:before method="before" pointcut-ref="mypointcut"/>
+			<!-- 后置通知 -->
+			<aop:after method="after" pointcut-ref="mypointcut"/>
+		</aop:aspect>
+	</aop:config>
+</beans>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>省市二级联动</title>
+</head>
+<body>
+	<select id="select1" onchange="run(this.value)">
+		<option >--请选择--</option>
+		<option value="河南">河南</option>
+		<option value="河北">河北</option>
+		<option value="北京">北京</option>
+		<option value="山东">山东</option>
+	</select>
+	<select id="select2"> 
+	
+	</select>
+</body>
+<script type="text/javascript">
+	var arr = [];
+	arr[0] = new Array("北京","海淀区","昌平区","朝阳区","东城区","西城区","丰台区","大兴区","怀柔区");
+	arr[1] = new Array("河北","石家庄","保定","邯郸","秦皇岛","张家口","唐山","承德","廊坊");
+	arr[2] = new Array("山东","济南","青岛","烟台","威海","潍坊","菏泽","临沂","淄博","济宁","聊城");
+	arr[3] = new Array("河南","郑州","安阳","信阳","洛阳","南阳","开封","商丘","驻马店","平顶山");
+	
+		function run(val){
+			//获取select2
+			var select2 = document.getElementById("select2");
+			//将select2下的所有子节点清除
+			var ops = select2.getElementsByTagName("option");
+			for(var i=0;i<ops.length;i++){
+				//获取每个节点
+				var op=ops[i];
+				select2.removeChild(op);
+				i--;
+			}
+			// 获取数组的值
+			for(var i=0;i<arr.length;i++){
+				var inarr = arr[i];
+				// 里面的数组0位置的元素
+				var str=inarr[0];
+				// 判断传过来的值和数组的值是否相等
+				if(val == str){
+					// 获取数组后的内容并添加到select2中
+					for(var j=1;j<inarr.length;j++){
+						var instr = inarr[j];
+						//创建元素对象
+						var option = document.createElement("option");
+						//创建文本对象
+						var text = document.createTextNode(instr);
+						//将文本添加到option先
+						option.appendChild(text);
+						//将option添加到select2下
+						select2.appendChild(option);
+					}
+				}
+			}
+		}
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

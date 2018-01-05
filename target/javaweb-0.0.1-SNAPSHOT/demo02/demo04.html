@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Node对象</title>
+</head>
+
+<body>
+
+<input type="text" id="nameId" value="nickName" />
+	
+	<span id="spanId">
+		span
+	</span>
+	
+	
+	<ul id="ulId">
+		<li>北</li>
+		<li id="sh">上</li>
+		<li id="gz">广</li>
+	</ul>
+
+	
+	<hr/>
+	
+	<button id="btnId">
+		button
+	</button>
+	
+	<span id="spanId2">
+		<p>this is span2</p>
+	</span>
+	
+
+</body>
+<script type="text/javascript">
+	/*
+							元素				属性				文本
+			nodeName		大写的标签名称		属性名称			#text
+			nodeType		1				2				3
+			nodeValue		null			属性的值			文本的内容
+			
+			* parentNode		获取父节点
+			* childNodes		所有子节点
+			* firstChild		第一个子节点
+			* lastChild			最后一个子节点
+			* nextSibling		下一个兄弟节点
+			* previousSibling	上一个兄弟节点
+			
+			* appendChild(node)			父节点调用，在末尾添加子节点
+			* insertBefore(new,old)		父节点调用，在指定节点之前添加子节点
+			* replaceChild(new,old)		父节点调用，替换节点
+			* removeChild(node)			父节点调用,删除节点
+			
+			* cloneNode(boolean)		不是父节点调用,复制节点
+				* boolean	：如果是true，复制子节点
+							：如果是false，不复制子节点，默认是false
+	*/
+	function out(a){
+		document.write(a);
+		document.write("<br>");
+	}
+	
+	
+		var nameId=document.getElementById("nameId");
+		document.write("<p>元素<p><br>");
+		out(nameId.nodeName);
+		out(nameId.nodeType);
+		out(nameId.nodeValue);
+		
+		document.write("<p>属性<p><br>");
+		var attr = nameId.getAttributeNode("type");
+		out(attr);
+		out(attr.nodeName);
+		out(attr.nodeType);
+		out(attr.nodeValue);
+		
+		document.write("<p>文本<p><br>");
+		var span = document.getElementById("spanId");
+		var text=span.firstChild;
+		out(text.nodeName);
+		out(text.nodeType);
+		out(text.nodeValue);
+		
+		document.write("<p>获取父节点<p><br>");
+		var textParentNode=text.parentNode;
+		out(textParentNode.nodeName);
+		
+		document.write("<p>获取所有子节点/第一个子节点/最后一个子节点<p><br>");
+		var ulId = document.getElementById("ulId");
+		out(ulId.childNodes.length);
+		out(ulId.firstChild.nodeType);
+		out(ulId.lastChild.nodeName);
+		
+		// 复制button的按钮，添加到span标签的中间
+		var btn = document.getElementById("btnId");
+		var newbtn=btn.cloneNode(true);
+		var span2=document.getElementById("spanId2");
+		span2.appendChild(newbtn);
+		
+		// 删除节点
+		document.getElementById("sh").onclick = function(){
+			//this.parentNode.removeChild(this);
+			var sh = document.getElementById("sh");
+			var ul = sh.parentNode;
+			ul.removeChild(sh);
+			}
+		
+		//点击广用深替代
+		document.getElementById("gz").onclick = function(){
+			var ul = this.parentNode;
+			var li = document.createElement("li");
+			var text = document.createTextNode("深");
+			li.appendChild(text);
+			ul.appendChild(li);
+		}
+</script>
+</html>
