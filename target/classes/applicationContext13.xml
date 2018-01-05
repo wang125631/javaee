@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+	http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<!-- 定义目标方法 -->
+	<bean id="userDao" class="com.wpx.spring.demo13.UserDao"></bean>
+	<!-- 增强方法 -->
+	<bean id="myAroundAdvice" class="com.wpx.spring.demo13.MyAroundAdvice"></bean>
+	<!-- 定义一个带有切点的切面 -->
+	<bean id="myPointcutAdvisor" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+		<property name="pattern" value=".*add.*"></property>
+		<property name="advice" ref="myAroundAdvice" ></property>
+	</bean>
+	<!-- 自动生成代理 -->
+	<bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"></bean>
+</beans>
