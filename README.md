@@ -47,7 +47,17 @@ spring
 	spring.demo02 -> Bean的实例化
 	spring.demo03 -> Bean的作用范围
 	spring.demo04 -> Bean的生命周期
-	spring.demo05 -> 
-	spring.demo06 -> 
-	spring.demo07 -> 
+	spring.demo05 -> SpEL
+	spring.demo06 -> spring集合注入
+	spring.demo07 -> spring注解
+	spring.demo08 -> @Configuration
+	spring.demo09 -> JDK代理
+	spring.demo10 -> cglib代理
+	spring.demo11 -> 前置增强
+	spring.demo12 -> 环绕通知
+	spring.demo13 -> 自动生成代理
+	spring.demo14 -> 切面类/aspectj
+	spring.demo15 -> aspect通过xml配置
+	spring.demo16 ->  
+	spring.demo17 ->  
 	

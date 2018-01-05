@@ -35,13 +35,17 @@ public class CustomerServiceImpl implements CustomerService,BeanNameAware,
 	}
 
 	public void afterPropertiesSet() throws Exception {
-		
+		System.out.println("第六步:属性设置后执行...");
 	}
-
+	public void setup(){
+		System.out.println("第七步:调用手动设置的初始化方法....");
+	}
 	public void destroy() throws Exception {
-
+		System.out.println("第十步:调用销毁的方法....");
 	}
-
+	public void teardown() {
+		System.out.println("第十一步:调用手动销毁的方法....");
+	}
 
 
 }
