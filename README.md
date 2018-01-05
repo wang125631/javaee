@@ -58,6 +58,11 @@ spring
 	spring.demo13 -> 自动生成代理
 	spring.demo14 -> 切面类/aspectj
 	spring.demo15 -> aspect通过xml配置
-	spring.demo16 ->  
-	spring.demo17 ->  
+	spring.demo16 -> JdbcTemplate
+	spring.demo17 -> JdbcDaoSupport
+	spring.demo18 -> TransactionTemplate/手动编码
+	spring.demo19 -> 配置生成事务代理对象/原始的声明式事务
+	spring.demo20 -> 声明式事务管理(自动代理/基于切面)
+	spring.demo21 -> 基于注解的事务管理
+	
 	
