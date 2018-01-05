@@ -65,7 +65,10 @@ spring
 	spring.demo20 -> 声明式事务管理(自动代理/基于切面)
 	spring.demo21 -> 基于注解的事务管理
 	
-hibernate
+springmvc 
 	
-	
+	spring.demo01 -> springmvc的HelloWorld
+	spring.demo02 -> springMVC的工作流程
+	spring.demo03 -> springMVC的PathVariable注解
+	spring.demo04 -> org.springframework.web.filter.HiddenHttpMethodFilter
 

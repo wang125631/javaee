@@ -9,6 +9,7 @@
 	<configs>
 		<config>src/main/resources/applicationContext.xml</config>
 		<config>src/main/resources/applicationContext13.xml</config>
+		<config>src/main/resources/spring-mvc.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
