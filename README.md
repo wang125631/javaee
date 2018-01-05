@@ -65,4 +65,7 @@ spring
 	spring.demo20 -> 声明式事务管理(自动代理/基于切面)
 	spring.demo21 -> 基于注解的事务管理
 	
+hibernate
 	
+	
+

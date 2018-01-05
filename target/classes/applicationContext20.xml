@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd">
+ 	<!-- 加载jdbc的配置文件 -->
+ 		<context:property-placeholder location="classpath:jdbc.properties"/>
+	<!-- 配置druid数据源 -->
+	<bean id="druidDataSource" class="com.alibaba.druid.pool.DruidDataSource">
+		<property name="username" value="${jdbc.username}"></property>
+		<property name="url" value="jdbc:mysql:///spring_demo18"></property>
+		<property name="driverClassName" value="${jdbc.driver}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+	</bean>
+
+	<!-- 持久层类 -->
+	<bean id="accountDao" class="com.wpx.spring.demo20.AccountDaoImpl">
+		<!-- 注入连接池的对象,通过连接池对象创建模板. -->
+		<property name="dataSource" ref="druidDataSource"></property>
+	</bean>
+	<!-- 业务层类 -->
+	<bean id="accountService" class="com.wpx.spring.demo20.AccountServiceImpl">
+		<property name="accountDao" ref="accountDao"></property>
+	</bean>	
+	<!-- 配置事务管理器 -->
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="druidDataSource"></property>
+	</bean>
+	<!-- 定义一个增强 -->
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<!-- 增强(事务)的属性的配置 -->
+		<tx:attributes>
+			<!-- 
+				isolation:DEFAULT:事务的隔离级别
+				propagation:事务的传播行为
+				read-only:false 不是只读
+				timeout: -1
+				
+			 -->
+			<tx:method name="transfer" />
+		</tx:attributes>
+	</tx:advice>
+		<!-- aop配置定义切面和切点的信息 -->
+	<aop:config>
+		<!-- 定义切点:哪些类的哪些方法应用增强 -->
+		<aop:pointcut expression="execution(* com.wpx.spring.demo20.AccountServiceImpl.*(..))" id="mypointcut"/>
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="mypointcut"/>
+	</aop:config>
+</beans>
