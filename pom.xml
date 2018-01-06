@@ -8,9 +8,9 @@
    <properties>
    		<jstl.version>1.2</jstl.version>
    		<servlet-api.version>2.5</servlet-api.version>
+   		
 		<jsp-api.version>2.0</jsp-api.version>
 		<spring.version>4.2.4.RELEASE</spring.version>
-		
 		<druid.version>1.0.9</druid.version>
 		
 		<mysql.version>5.1.32</mysql.version>
@@ -86,11 +86,7 @@
 				<artifactId>hibernate-core</artifactId>
 				<version>${hibernate.version}</version>
 			</dependency>
-			<dependency>
-		        <groupId>org.hibernate</groupId>
-		        <artifactId>hibernate-validator</artifactId>
-		        <version>5.1.0.Final</version>
-		    </dependency>
+	
 			<!-- hibernate end -->
 			<!-- log start -->
 			<dependency>
@@ -144,6 +140,24 @@
 				</plugin>
 			</plugins>
 		</pluginManagement>
+		<resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*.properties</include>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
 	</build>
 
 	<packaging>war</packaging>

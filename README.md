@@ -65,6 +65,13 @@ spring
 	spring.demo20 -> 声明式事务管理(自动代理/基于切面)
 	spring.demo21 -> 基于注解的事务管理
 	
+	
+hibernate
+	
+	hibernate.demo01 -> hibernate实现增删改查
+	hibernate.demo02 -> get/load及配置说明
+	
+	
 springmvc 
 	
 	spring.demo01 -> springmvc的HelloWorld
