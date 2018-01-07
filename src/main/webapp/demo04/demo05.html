@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>删除节点</title>
+<!-- 引入外部独立的jquery.js文件 -->
+	<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//删除节点bj
+		$("#btn1").click(function(){
+			$("#bj").remove();
+		});
+		//删除节点city
+		$("#btn2").click(function(){
+			$("#city").remove();
+		});
+			
+	});
+</script>
+</head>
+<body>
+	 <ul id="city">
+	     <li id="bj" name="beijing">北京<p>海淀区</p></li>
+	     <li id="hn" name="henan">河南<p>安阳 </p></li>
+		 <li id="tj" name="tianjin">天津</li>
+	</ul>
+	<input type="button" value="删除节点bj" id="btn1">	
+	<input type="button" value="删除节点city" id="btn2">	
+	
+</body>
+	<!--1256317570@qqcom  -->
+</html>

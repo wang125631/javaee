@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>外部插入节点</title>
+<!-- 引入外部独立的jquery.js文件 -->
+	<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//在每个匹配的元素之后插入内容
+		$("#btn1").click(function(){
+			$("#bj").after($("#p3"));
+		});
+		///在每个匹配元素 的前面插入内容
+		$("#btn2").click(function(){
+			$("#bj").before($("#p2"));
+		});
+			
+		///在每个匹配元素 的内部前面插入内容
+		$("#btn3").click(function(){
+			$("#bj").insertBefore($("#p2"));
+		});
+		///在每个匹配元素 的内部后面插入内容
+		$("#btn4").click(function(){
+			$("#bj").insertAfter($("#p1"));
+		});
+	});
+</script>
+</head>
+<body>
+	 <ul id="city">
+	     <li id="bj" name="beijing">北京</li>
+	     <li id="hn" name="henan">河南</li>
+		 <li id="tj" name="tianjin">天津</li>
+	 </ul>
+	<p id="p1">this is p1 .</p>
+	<p id="p2">this is p2 .</p>
+	<p id="p3">this is p3 .</p> 
+
+	<input type="button" value="在每个匹配的元素之后插入内容" id="btn1">	
+	<input type="button" value="在每个匹配元素 的前面插入内容" id="btn2">	
+	<input type="button" value="在每个匹配的元素内部前面插入内容" id="btn3">	
+	<input type="button" value="在每个匹配的元素内部后面插入内容" id="btn4">	
+	
+</body>
+	<!--1256317570@qqcom  -->
+</html>

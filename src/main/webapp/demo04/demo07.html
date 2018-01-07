@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>替换节点</title>
+<!-- 引入外部独立的jquery.js文件 -->
+	<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//// 将所有匹配的元素都替换为指定的 HTML 或 DOM 元素
+		$("#btn1").click(function(){
+			$("p").replaceWith($("button"));
+		});
+		
+		$("#btn2").click(function(){
+			$("button").replaceAll($("p"));
+		});
+			
+	});
+</script>
+</head>
+<body>
+	<p id="p1">this is p1</p>
+	<p id="p2">this is p2</p>
+	<p id="p3">this is p2</p>
+	
+	<button id="button1"> this is button1</button>
+	<button id="button2"> this is button2</button>
+	
+	<br>
+	<br>
+	<input type="button" value="将所有的p替换为button" id="btn1">	
+	<input type="button" value="将所有的button替换为p" id="btn2">	
+	
+</body>
+	<!--1256317570@qqcom  -->
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>替换节点</title>
+<!-- 引入外部独立的jquery.js文件 -->
+	<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+	<style type="text/css">
+		   .one{
+			    width: 200px;
+			    height: 140px;
+			    margin: 40px;
+			    background: red;
+			    border: #000 1px solid;
+				float:left;
+			    font-size: 17px;
+			    font-family:Roman;
+			}
+		
+		 	div,span{
+			    width: 140px;
+			    height: 140px;
+			    margin: 20px;
+			    background: #9999CC;
+			    border: #000 1px solid;
+				float:left;
+			    font-size: 17px;
+			    font-family:Roman;
+			}
+			
+			div.mini{
+			    width: 30px;
+			    height: 30px;
+			    background: #CC66FF;
+			    border: #000 1px solid;
+			    font-size: 12px;
+			    font-family:Roman;
+			}
+	 </style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//采用属性增加样式
+		$("#btn1").click(function(){
+			$("#mover").css("background","red");
+		});
+		//addClass
+		$("#btn2").click(function(){
+			$("#mover").addClass("mini");
+		});
+		/*
+		 * removeClass():
+		 * 	* 不传参数:删除所有样式
+		 * 	* 传递参数:删除指定样式
+		 */
+		
+		$("#btn3").click(function(){
+			$("#mover").removeClass("mini");
+			});
+		//切换样式
+		$("#btn4").click(function(){
+			$("#mover").toggleClass("one");
+		});
+		//判断某个元素是否含有某个指定样式
+		$("#btn5").click(function(){
+			alert($("#mover").hasClass("mini"));
+		});		
+	});
+</script>
+</head>
+<body>
+	<input type="button" value="采用属性增加样式"  id="btn1"/>
+		 <input type="button" value=" addClass"  id="btn2"/>
+		 <input type="button" value="removeClass"  id="btn3"/>
+		 <input type="button" value=" 切换样式"  id="btn4"/>
+		 <input type="button" value=" hasClass"  id="btn5"/>
+		
+ 		 <h1>天气冷了</h1>
+		 <h2>天气又冷了</h2>
+		 
+	   
+		<br>
+		<div id="mover">
+		 	  动画
+		</div>
+		<br>
+		<span class="spanone">    span
+		</span>
+	
+</body>
+	<!--1256317570@qqcom  -->
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>包裹节点</title>
+<!-- 引入外部独立的jquery.js文件 -->
+	<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$("#p1").wrap("<strong></strong>");
+		});
+	});
+</script>
+</head>
+<body>
+	<p id="p1">this is p1</p>
+	<br>
+	<input type="button" value="将p标签包裹"  id="btn1">
+
+	 
+</body>
+	<!--1256317570@qqcom  -->
+</html>

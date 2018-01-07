@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>替换节点</title>
+<!-- 引入外部独立的jquery.js文件 -->
+	<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		//该方法只考虑子元素而不考虑任何后代元素.
+		$("#btn1").click(function(){
+			alert($("#city").children().length);
+		});
+		//获取bj的先一个节点
+		$("#btn2").click(function(){
+			alert($("#bj").next().text());
+		});
+		//获取tj的前一个节点
+		$("#btn3").click(function(){
+			alert($("#tj").prev().text());
+		});
+		//获取hn的兄弟节点长度
+		$("#btn4").click(function(){
+			alert($("#hn").siblings().length);
+		});
+		//find
+		//选获取元素通过find 找到对应的标签的子元素的集合...
+	});
+</script>
+</head>
+<body>
+	 <ul id="city">
+	 	 <li id="bj" name="beijing">北京</li>
+		 <li id="hn" name="hennan">河南</li>
+		 <li id="tj" name="tianjin">天津</li>
+	 </ul>
+	 
+	 <input type="button" value="city下子元素的长度"  id="btn1">
+	 <input type="button" value="取得相邻元素的下一个同级元素"  id="btn2">
+	 <input type="button" value="获取tj的前一个节点"  id="btn3">
+	 <input type="button" value="获取河南的兄对节点的长度"  id="btn4">
+	 
+</body>
+	<!--1256317570@qqcom  -->
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>创建节点</title>
+<!-- 引入外部独立的jquery.js文件 -->
+	<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		/*
+			历史回顾:js创建节点方法
+			var li= document.createElement("li");
+			var text=document.createTextNode("河南");
+			li.appendChild(text);
+			var ul=document.getElement1ById("city");
+			ul.appendChild(li);
+		*/
+		
+		//通过jquery创建li元素
+		//1.创建节点
+		var li=$("<li></li>");
+		//2.创建属性
+		li.attr("id","hn");
+		li.attr("name","henan");
+		//3.设置文本
+		li.text("河南");
+		//4.添加到ul
+		$("#city").append(li);
+	});
+</script>
+</head>
+<body>
+	 <ul id="city">
+	 </ul>
+</body>
+	<!--1256317570@qqcom  -->
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>内部插入节点</title>
+<!-- 引入外部独立的jquery.js文件 -->
+	<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		//向每个匹配的元素的内部的结尾处追加内容
+		$("#btn1").click(function(){
+			$("#bj").append($("#lz"));		
+		});
+		//将每个匹配的元素追加到指定的元素中的内部结尾处
+		$("#btn2").click(function(){
+			$("#bj").appendTo($("#lz"));
+		});
+		
+		//prepend(content):向每个匹配的元素的内部的开始处插入内容
+		$("#btn3").click(function(){
+			$("#bj").prepend($("#lz"));
+		});
+		//prependTo(content) :将每个匹配的元素插入到指定的元素内部的开始处
+		$("#btn4").click(function(){
+			$("#bj").prependTo($("#lz"));
+		});
+	});
+</script>
+</head>
+<body>
+	 <ul id="city">
+	     <li id="bj" name="beijing">北京</li>
+	     <li id="hn" name="henan">河南</li>
+		 <li id="tj" name="tianjin">天津</li>
+	 </ul>
+	 <ul id="love">
+	 	<li id="lz">龙珠</li>
+	 	<li id="gtl">古天乐</li>
+	 </ul>
+	 
+	 <div id="hello">Hello</div>
+	
+	<input type="button" value=" 向每个匹配的元素的内部的结尾处追加内容" id="btn1"> 
+	<input type="button" value=" 将每个匹配的元素追加到指定的元素中的内部结尾处" id="btn2"> 
+	<input type="button" value=" 向每个匹配的元素的内部的开始处插入内容" id="btn3"> 
+	<input type="button" value=" 将每个匹配的元素插入到指定的元素内部的开始处" id="btn4"> 
+	 
+</body>
+	<!--1256317570@qqcom  -->
+</html>
