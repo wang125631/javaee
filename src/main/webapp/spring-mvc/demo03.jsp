@@ -7,6 +7,6 @@
 <title>通过点击超链接传递参数,通过PathVariable注解获取</title>
 </head>
 <body>
-	<a href="demo03/213">PathVariable传参</a>
+	<a href="demo03/213.do">PathVariable传参</a>
 </body>
 </html>

@@ -24,20 +24,44 @@ demo02 -> js操作dom
 	demo07.html -> 下拉列表左右添加
 	demo08.html -> 省市二级联动
 
-demo03 -> JQuery
+demo03 -> JQuery选择器
 
 	demo01.html -> JQuery基础 
 	demo02.html -> JQuery选择器--基本选择器
 	demo03.html -> JQuery选择器--层次选择器
 	demo04.html -> JQuery选择器--基本过滤选择器
-	demo05.html -> JQuery选择器--可见性过滤选择器
-	demo06.html -> JQuery选择器--属性选择器
-	demo07.html -> JQuery选择器--子元素选择器
-	demo08.html -> JQuery选择器--表单对象属性过滤选择器
-	demo09.html -> JQuery选择器--表单选择器
-	
-	
+	demo05.html -> JQuery选择器--内容过滤选择器 
+	demo06.html -> JQuery选择器--可见性过滤选择器 
+	demo07.html -> JQuery选择器--属性选择器
+	demo08.html -> JQuery选择器--子元素选择器
+	demo09.html -> JQuery选择器--表单对象属性过滤选择器
+	demo10.html -> JQuery选择器--表单选择器
 
+demo04 -> JQuery操作Dom
+
+	demo01.html -> 查找节点
+	demo02.html -> 创建节点
+	demo03.html -> 内部插入节点
+	demo04.html -> 外部插入节点
+	demo05.html -> 删除节点
+	demo06.html -> 复制节点
+	demo07.html -> 替换节点
+	demo08.html -> 样式操作
+	demo09.html -> 遍历节点
+	demo10.html -> 包裹节点
+	
+demo05 -> JQuery对ajax的支持   (此部分需在服务器环境下 maven下tomcat运行指令 tomcat7:run)
+
+	demo01.html -> ajax方法的调用
+	demo02.html -> 异步提交表单
+	demo03.html -> 
+	demo04.html -> 
+	demo05.html -> 
+	demo06.html -> 
+	demo07.html -> 
+	demo08.html -> 
+	demo09.html -> 
+	demo10.html -> 
 
 ------------------------------------------框架类--------------------------------------------------
 

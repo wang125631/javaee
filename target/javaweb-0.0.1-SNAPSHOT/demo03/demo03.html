@@ -57,9 +57,21 @@ $(document).ready(function(){
 		});
 		//给btn2绑定点击事件,在body内,选择子元素是div背景色变为红色
 		$('#btn2').click(function(){
-			$("body").css("background","red");
+			$("body>div").css("background","red");
 		});
-		
+		//给btn3绑定点击事件,选择 id为one 的下一个div元素.
+		$('#btn3').click(function(){
+			$("#one+div").css("background","red");
+		});
+		//给btn4绑定点击事件 id为two的元素后面的所有div兄弟元素
+		$('#btn4').click(function(){
+			$("#two~div").css("backgroud","red");
+		});
+		//选择 id为two的元素的所有div兄弟元素
+		$('#btn5').click(function(){
+			//只有jquery对象才支持链式编程
+			$("#two").siblings("div").css("background","red");
+		});
 	})
 </script>
 </head>
@@ -76,8 +88,6 @@ $(document).ready(function(){
   <input type="button" value="选择 id为two的元素的所有div兄弟元素." id="btn5"/>
   <br /><br />
 	
-
-
    <!-- 测试的元素 -->
   <div class="one" id="one" >
  id为one,class为one的div
@@ -118,4 +128,5 @@ $(document).ready(function(){
   
   <span id="mover">正在执行动画的span元素.</span>
 </body>
+<!--1256317570@qqcom  -->
 </html>
