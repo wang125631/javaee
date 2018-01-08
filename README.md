@@ -54,16 +54,31 @@ demo05 -> JQuery对ajax的支持   (此部分需在服务器环境下 maven下tomcat运行指令 tom
 
 	demo01.html -> ajax方法的调用
 	demo02.html -> 异步提交表单
-	demo03.html -> 
-	demo04.html -> 
-	demo05.html -> 
-	demo06.html -> 
-	demo07.html -> 
-	demo08.html -> 
-	demo09.html -> 
-	demo10.html -> 
+	demo03.html -> get
+	demo04.html -> getJSON
+	demo05.html -> load方法的调用
+	demo06.html -> post方法的调用
+	demo07.html -> getScript
 
-------------------------------------------框架类--------------------------------------------------
+------------------------------------------专题/框架类--------------------------------------------------
+jdbc
+
+	jdbc.demo01	-> sql简介/数据库的CRUD(增删改查)
+	jdbc.demo02	-> 数据库表的CRUD
+	jdbc.demo03	-> 表数据的CRUD
+	jdbc.demo04	-> 多表操作
+	SQL Join  https://segmentfault.com/a/1190000000454332
+	jdbc.demo05	-> java操作数据库
+		Emp    -> 封装的实体类
+		Demo01 -> 连接数据库进行查询
+		Demo02 -> 通过prepareStatement插入数据
+		Demo03 -> 修改数据
+		Demo04 -> 删除操作
+		
+	jdbc.demo06	-> 
+	jdbc.demo07	-> 
+
+
 
 spring
 	

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>get方法的调用</title>
+<!-- 引入外部独立的jquery.js文件 --> 
+	<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			 $.get("data.json",{},function(data){
+			 	var rows= data.rows;
+			 	for(var i=0;i<rows.length;i++){
+			 		document.write("id  &nbsp;&nbsp;"+rows[i].id+"&nbsp;&nbsp;");
+			 		document.write("name &nbsp;&nbsp;"+rows[i].name);
+			 		document.write("<br>");
+			 	}
+			 });
+	});
+});
+</script>
+</head>
+<body>
+		<input type="button"  id="btn1"  value="get 方法的调用">
+   		<div id="div1"></div>
+</body>
+	<!--1256317570@qqcom  -->
+</html>

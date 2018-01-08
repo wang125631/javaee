@@ -28,32 +28,18 @@
 			}
 			var ajax=$.ajax({
 				url:"./data.json",//请求地址
-				 dataType : "json"
-			});
-			
-			 /*
-			 $.ajax({
-			 	 url:"../../formServlet",
-				 
-				 
-//				 data:{
-//				 	username:$("#username").val(),
-//					password:$("#password").val(),
-//					email:$("#email").val(),
-//				 },
-
-				//通过ajax 方法提交的时候有两种数据格式，一种字符串
-				// data:data,
-				
-				 //一个是json
-				 
-				 data:data,
-				 type:"POST",
-				 success:function(data){
-					
-				 }
-			 })
-		})*/
+				dataType : "json",  //预计数据响应类型
+				data:{
+					//请求参数 key:value形式
+					username:$("#username").val(),
+					password:$("#password").val(),
+					email:$("#email").val()
+					success:function(data){
+						//响应成功的回调函数
+						alert("success !");
+					}
+ 				}
+			}); 
 		}); 
 	});
 </script>
