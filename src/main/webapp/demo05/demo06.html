@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>post方法的调用</title>
+<!-- 引入外部独立的jquery.js文件 --> 
+	<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$.post("data.json",{"id":1},function(){
+				//回调函数	
+			});
+		});
+});
+</script>
+</head>
+<body>
+		<h1>一般如果我们有请求参数，就使用post 方法..</h1>
+		<input type="button"  id="btn1"  value="post 方法的调用">
+   		<div id="div1"></div>
+</body>
+	<!--1256317570@qq.com  -->
+</html>

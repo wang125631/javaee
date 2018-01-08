@@ -1,0 +1,99 @@
+查看当前使用的数据库
+	select database();
+切换数据库
+	use jdbc;
+数据的类型
+	字符串型 
+	VARCHAR、CHAR
+		* varchar和char区别：
+			* varchar（经常使用） 长度是可变的。 name varchar(7)  存入数据hello，但是如果存入helloworld会报错。
+			* char				长度不可变的。   name char(7) 存入的数据hello，如果不够用空格补全。
+			* 效率高：char效果。
+			
+	大数据类型（一般不用）
+	BLOB、TEXT
+		BLOB：二进制文件
+		TEXT：字符
+		
+	数值型
+	TINYINT 、SMALLINT、INT、BIGINT、FLOAT、DOUBLE
+	
+	逻辑性 对应boolean
+	BIT
+	
+	日期型
+	DATE、TIME、DATETIME、TIMESTAMP
+		* date	只包含日期
+		* time	只包含时分秒
+		* datetime和timestamp包含日期和时分秒区别：
+			* datetime需要手动录入时间。
+			* timestamp不传入数据，默认选择当前系统时间。
+
+约束（单表）
+	* 主键约束（*****）
+		* 标识标记该条记录。	通过pramary key声明主键。（默认唯一、非空）
+		* auto_increment	数据库维护主键。自动增长。
+		
+	* 唯一约束
+		* 值是唯一的。使用unique声明
+		
+	* 非空约束
+		* 值不能为空	not null
+语法：
+	create table 表名(
+		字段1 类型(长度) 约束,
+		字段2 类型(长度) 约束,
+		字段3 类型(长度) 约束,
+		字段4 类型(长度) 约束
+	);
+	例子:CREATE TABLE employee (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+	NAME VARCHAR (20) UNIQUE NOT NULL,
+	gender VARCHAR (10) NOT NULL,
+	birthday DATE NOT NULL,
+	entry_date DATE NOT NULL,
+	job VARCHAR (100) NOT NULL,
+	salary DOUBLE NOT NULL,
+	RESUME TEXT NOT NULL 
+)
+查看表的信息	
+
+ 	使用desc 表名;
+ 	例子:desc jdbc
+ 	
+ 查看当前库内所有表名 
+ 
+	show tables;
+
+查看建表语句和字符集
+	
+	show create table 表名; 
+
+ 修改表
+ 	修改表名
+	语法:	rename table 表名 to 新表名;	
+	例子:RENAME TABLE employee TO jdbc;
+	    RENAME TABLE jdbc TO employee;
+	    
+ 	添加字段:
+	语法: alter table 表名 add 字段 类型(长度) 约束;
+	例子:	ALTER TABLE employee ADD COLUMN nickname VARCHAR(20);
+	
+	修改字段的名称:
+	语法:alter table 表名 change 旧字段 新字段 类型(长度) 约束
+	例子:ALTER TABLE employee CHANGE nickname alias VARCHAR(20);
+	
+	修改类型或者约束
+	语法:alter table 表名 modify 字段 类型(长度) 约束;
+	例子:ALTER TABLE employee MODIFY alias CHAR(20);
+	
+	修改字符集
+	alter table 表名 character set utf8;						
+	
+删除表
+	语法:drop table 表名;
+	例子:drop table employee;
+	
+	
+	
+	

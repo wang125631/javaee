@@ -1,0 +1,55 @@
+事务:
+	事务就是一个事情，组成这个事情可能有多个单元，要求这些单元，要么全都成功，要么全都不成功。
+	在开发中，有事务的存在，可以保证数据完整性。
+
+例子:转账   A-10  exception	B+10  
+	会导致A账号减少10元,而B没有收到10元,事务即A-10 and B+10 ,否则回滚,即历史回退到出问题前,再来一次
+
+mysql下的事务操作
+	start transaction  开启事务
+	rollback 事务回滚
+	commit 事务提交 
+
+在mysql中autocommit=on oracle中为off,即mysql默认不开启事务,oracle中默认开启事务
+mysql 修改方式
+	查看:SHOW VARIABLES LIKE '%commit%'
+	修改:SET autocommit =off
+
+事务特性(ACID)
+
+原子性（Atomicity）
+原子性是指事务是一个不可分割的工作单位，事务中的操作要么都发生，要么都不发生。 
+一致性（Consistency）
+事务前后数据的完整性必须保持一致。
+隔离性（Isolation）
+事务的隔离性是指多个用户并发访问数据库时，一个用户的事务不能被其它用户的事务所干扰，多个并发事务之间数据要相互隔离。
+持久性（Durability）
+持久性是指一个事务一旦被提交，它对数据库中数据的改变就是永久性的，接下来即使数据库发生故障也不应该对其有任何影响。
+
+事务的隔离级别
+
+	1 Serializable：可避免脏读、不可重复读、虚读情况的发生。（串行化）
+	2 Repeatable read：可避免脏读、不可重复读情况的发生。（可重复读）不可以避免虚读
+	3 Read committed：可避免脏读情况发生（读已提交）
+	4 Read uncommitted：最低级别，以上情况均无法保证。(读未提交)
+
+查看当前事务隔离级别
+
+	SELECT @@tx_isolation
+	
+脏读:一个事务读取到另一个事务为提交数据
+不可重复读:两次读取数据不一致(读提交数据)---update
+虚读:两次读取数据不一致(读提交数据)----insert
+
+事务隔离级别:
+	read uncommitted 什么问题也解决不了.
+	read committed 可以解决脏读，其它解决不了.
+	Repeatable read 可以解决脏读，可以解决不可重复读,不能解决虚读.
+	Serializable 它会锁表，可以解决所有问题.
+
+	安全性：serializable > repeatable read > read committed > read uncommitted 
+	性能 ：serializable < repeatable read < read committed < read uncommitted 
+
+	结论： 实际开发中，通常不会选择 serializable 和 read uncommitted ，
+	mysql默认隔离级别 repeatable read ，oracle默认隔离级别 read committed
+	

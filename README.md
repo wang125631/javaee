@@ -74,11 +74,9 @@ jdbc
 		Demo02 -> 通过prepareStatement插入数据
 		Demo03 -> 修改数据
 		Demo04 -> 删除操作
-		
-	jdbc.demo06	-> 
-	jdbc.demo07	-> 
-
-
+		JdbcUtils -> jdbc简单封装
+	jdbc.demo06	-> mysql事务
+	jdbc.demo07	-> jdbc事务处理
 
 spring
 	

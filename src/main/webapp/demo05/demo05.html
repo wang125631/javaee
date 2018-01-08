@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>load方法的调用</title>
+<!-- 引入外部独立的jquery.js文件 --> 
+	<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			 //$.load()
+			 /**
+			  * 1:如果有参数的时候，则使用post 方式提交，
+			  * 2：如果没有请求参数，则默认使用get 方式提交..
+			  * load 方法它一般都是用于去载入一个静态的页面..
+			  */
+			// $("#div1").load("demo04.html");
+			$("#div1").load("data.json",{},function(data){
+				
+			});
+		});
+});
+</script>
+</head>
+<body>
+		<h1>放问服务端，服务端返回的数据格式必须是json 的数据格式...</h1>
+		<input type="button"  id="btn1"  value="load 方法的调用">
+   		<div id="div1"></div>
+</body>
+	<!--1256317570@qq.com  -->
+</html>

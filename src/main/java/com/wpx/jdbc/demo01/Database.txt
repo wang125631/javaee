@@ -1,0 +1,36 @@
+* SQL语言分类
+	* DDL（数据定义语言）
+		* 创建数据库、创建表
+		
+	* DML（数据操纵语言）（*****）
+		* 插入数据(insert) 修改数据(update)	删除数据(delete)
+		
+	* DCL （数据控制语言）
+		* if else
+		
+	* DQL（数据查询语言）（*****）
+		* 查询数据 select
+
+创建数据库
+
+	1. 语法: create database  数据库
+	例子:create database jdbc	
+	2. 语法: create database 数据库名称 character set 编码 collate 校对规则;
+	例子:create database jdbc character set 'utf-8' collate 'utf8_bin';
+
+查询数据库:
+	
+	1.查询所有的数据库
+	show databases;
+	2.查询数据库的定义 show create database 数据库;
+	例子: show create database jdbc;
+修改数据库:
+
+	语法：alter database 数据库 character set 编码 collate 校对规则;
+	例子:alter database jdbc character set 'gbk';
+
+删除数库
+	
+	语法:drop database 数据库名称
+	例子:drop database jdbc
+	

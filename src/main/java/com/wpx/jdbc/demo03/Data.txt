@@ -1,0 +1,65 @@
+添加数据
+
+	语法: insert into 表名 (字段1,字段2,字段3..) values(值1,值2,值3...);	有几列就插入多少的值。
+	例子:INSERT INTO employee(id,NAME,gender,birthday,entry_date,job,salary,RESUME) VALUES (1,'wangpx','man','1996-10-10','2018-1-8','java',19000,'aaa');
+	语法: insert into 表名 values(值1,值2,值3...);					插入所有的列
+	例子: INSERT INTO employee VALUES (2,'wpx','man','1996-10-10','2018-1-8','java',19000,'aaa');
+	
+修改语句
+	
+	 语法：update 表名 set 字段=值,字段=值... [where ]		
+	 如果没有where条件，默认更新所有的记录。
+	 有where提交，选择某一条记录。
+	 例子:UPDATE employee SET salary ='20000';  //将所有员工薪水修改为20k
+	例子:UPDATE employee SET salary ='25000' WHERE NAME='wangpx'; //将名为wangpx的薪水修改为25k
+	
+查询语句
+	
+	查询所有（字段）
+		语法:select * from 表名;						
+		例子:select * from employee;
+
+	显示查询字段名		
+		语法:select 字段名1,字段名2,字段名3 from 表名;						
+		例子:select id,name from employee;
+	
+	去除重复的数据。	
+		语法:select DISTINCT 字段名 from 表名;				
+		例子:SELECT DISTINCT RESUME FROM employee;
+	
+	 查询的列可以运算
+		例子:SELECT 3+4 FROM DUAL;
+	可以使用别名：使用as 别名		并且as可以省略
+		例子:SELECT  e.name e_name FROM employee e;
+	
+	in(范围内取内容)
+				like		-- 模糊查询		写法：like '张_或者%';	_和%区别：占位符。_只一个%可以有多个
+													%的写法	like '%张';		结果XXX张
+															like '张%';		结果张XXX
+															like '%张%';	只要有张就行
+				is null		-- 判断是否为null
+				and			-- 并且
+				or			-- 或者
+				not			-- 不成立
+				
+		例子: 	SELECT * FROM employee WHERE NAME LIKE 'w__'; 		//查询名字为wxx的所有信息
+	            SELECT * FROM employee WHERE NAME LIKE 'w%';  		//查询名字以w开头的的所有信息
+	            SELECT * FROM employee WHERE salary IN(0,20000);	//查询薪水20k以内的员工所有信息
+	            SELECT * FROM employee WHERE salary IS NULL;        //查询薪水为null
+	            SELECT * FROM employee WHERE salary >'20000' AND job='java';  //查询薪水大于20k的java工程师
+	        
+	   排序	使用order by 升序默认的(asc)/降序(desc)
+	   
+	  	 例子:		SELECT * FROM employee ORDER BY salary DESC;       //按薪水降序查询
+	 
+	  聚集函数	
+	  count 获取数量	sum 求和/滤空    	avg 平均数      max 最大值 	min 最小值
+	  group by	分组（一起使用）	条件过滤需要是having，不能使用where
+	  
+	  例子:
+	  SELECT COUNT(id),SUM(salary),AVG(salary),MAX(salary),MIN(salary) FROM employee GROUP BY job HAVING job='java'   
+	  	
+				
+				
+				
+				
