@@ -52,4 +52,52 @@ mysql 修改方式
 
 	结论： 实际开发中，通常不会选择 serializable 和 read uncommitted ，
 	mysql默认隔离级别 repeatable read ，oracle默认隔离级别 read committed
-	
+
+解决丢失更新问题:
+1.悲观锁
+	悲观锁 （假设丢失更新一定会发生 ） ----- 利用数据库内部锁机制，管理事务	
+	提供锁:
+		1.共享锁
+			select * from table lock in share mode;(读锁,共享锁)
+		2.排他锁
+			select * from table for update;(写锁,排他锁)
+2.乐观锁
+	乐观锁 （假设丢失更新不会发生）------- 采用程序中添加版本字段解决丢失更新问题
+		在数据表添加版本字段，每次修改过记录后，版本字段都会更新，如果读取是版本字段，
+		与修改时版本字段不一致，说明别人进行修改过数据
+		
+		
+连接池:		
+		
+C3P0是一个开源的JDBC连接池，它实现了数据源和JNDI绑定，支持JDBC3规范和JDBC2的标准扩展。
+目前使用它的开源项目有Hibernate，Spring等。
+c3p0与dbcp区别
+
+dbcp没有自动回收空闲连接的功能
+
+c3p0有自动回收空闲连接功能
+
+c3p0连接池使用
+	1.导包
+		c3p0-0.9.1.2.jar
+		
+	使用
+		1.手动
+			ComboPooledDataSource cpds = new ComboPooledDataSource();
+			cpds.setDriverClass("com.mysql.jdbc.Driver");
+			cpds.setJdbcUrl("jdbc:mysql:///day18");
+			cpds.setUser("root");
+			cpds.setPassword("abc");
+			
+		2.自动(使用配置文件)
+			
+			c3p0的配置文件可以是properties也可以是xml.
+			
+			c3p0的配置文件如果名称叫做 c3p0.properties or c3p0-config.xml 并且放置在classpath路径下(对于web应用就是classes目录)
+			那么c3p0会自动查找。
+			
+			注意：我们其时只需要将配置文件放置在src下就可以。
+					
+					使用：
+						ComboPooledDataSource cpds = new ComboPooledDataSource();
+						它会在指定的目录下查找指定名称的配置文件，并将其中内容加载。

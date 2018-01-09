@@ -27,7 +27,7 @@ public class Demo04 {
 		}
 	}
 	public static void delete(Emp emp) throws Exception {
-		// 加载mysql驱动
+				// 加载mysql驱动
 				Class.forName("com.mysql.jdbc.Driver");
 				//定义要连接的数据库,账号,密码 
 				String url="jdbc:mysql:///jdbc";
