@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>getScript  异步去加载服务端的一段脚本文件</title>
+<!-- 引入外部独立的jquery.js文件 --> 
+
+	<script type="text/javascript" src="../js/jquery-1.4.2.js"></script>
+<style type="text/css">
+		div{
+			background:red;
+			height:300px;
+			width:300px;
+			border:3px solid #abcdef;
+			display:none;
+		}
+	</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn1").click(function(){
+			$.getScript("data.js");
+		});
+});
+</script>
+</head>
+<body>
+		<h1>getScript  异步去加载服务端的一段脚本文件</h1>
+		<input type="button"  id="btn1"  value="getScript 方法的调用">
+   		<div id="div1"></div>
+</body>
+	<!--1256317570@qq.com  -->
+</html>
