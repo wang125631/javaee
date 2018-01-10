@@ -5,36 +5,110 @@
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
   
-	<!-- 解决post乱码 -->
-  	<filter>
-  		<filter-name>CharacterEncodingFilter</filter-name>
-  		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
-  		<init-param>
-  			<param-name>encoding</param-name>
-  			<param-value>utf-8</param-value>
-  		</init-param>
-  	</filter>
-  	<filter-mapping>
-  		<filter-name>CharacterEncodingFilter</filter-name>
-  		<url-pattern>/*</url-pattern>
-  	</filter-mapping>
-  	
-  	<!-- springmvc  -->
-  	<!-- The front controller of this Spring Web application, responsible for handling all application requests -->
-	<servlet>
-		<servlet-name>springDispatcherServlet</servlet-name>
-		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-		<init-param>
-			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath:spring-mvc.xml</param-value>
-		</init-param>
-		<load-on-startup>1</load-on-startup>
+  			<!--	sevlet.demo02 -> 第一个前后端交互案例  -->
+ 	<servlet>
+		<servlet-name>ServletDemo01</servlet-name>
+		<servlet-class>com.wpx.servlet.demo02.ServletDemo01</servlet-class>
 	</servlet>
-
-	<!-- Map all requests to the DispatcherServlet for handling -->
 	<servlet-mapping>
-		<servlet-name>springDispatcherServlet</servlet-name>
-		<url-pattern>*.do</url-pattern>
+		<servlet-name>ServletDemo01</servlet-name>
+		<url-pattern>/servletDemo01</url-pattern>
 	</servlet-mapping>
 	
+		<!-- sevlet.demo03 -> Servlet接口  -->
+	<servlet>
+		<servlet-name>ServletInterface</servlet-name>
+		<servlet-class>com.wpx.servlet.demo03.ServletInterface</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletInterface</servlet-name>
+		<url-pattern>/servletInterface</url-pattern>
+	</servlet-mapping>
+	
+		<!-- sevlet.demo04 -> GenericServlet  -->
+	<servlet>
+		<servlet-name>ServletGenerice</servlet-name>
+		<servlet-class>com.wpx.servlet.demo04.ServletGenerice</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletGenerice</servlet-name>
+		<url-pattern>/servletGenerice</url-pattern>
+	</servlet-mapping>
+	
+	<!-- sevlet.demo05 -> 初始化参数  -->
+	<servlet>
+		<servlet-name>InitParameter</servlet-name>
+		<servlet-class>com.wpx.servlet.demo05.InitParameter</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>InitParameter</servlet-name>
+		<url-pattern>/initParameter</url-pattern>
+	</servlet-mapping>
+	
+	<!-- sevlet.demo06 -> ServletConfig对象 -->
+	<servlet>
+		<servlet-name>ServletConfigObject</servlet-name>
+		<servlet-class>com.wpx.servlet.demo06.ServletConfigObject</servlet-class>
+		<init-param>
+			<param-name>username</param-name>
+			<param-value>wpx</param-value>
+		</init-param>
+		<init-param>
+			<param-name>password</param-name>
+			<param-value>123456</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletConfigObject</servlet-name>
+		<url-pattern>/servletConfigObject</url-pattern>
+	</servlet-mapping>
+	
+	<!--sevlet.demo07 -> 通过servlet进行页面跳转  -->
+	<servlet>
+		<servlet-name>ServletRedirect</servlet-name>
+		<servlet-class>com.wpx.servlet.demo07.ServletRedirect</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletRedirect</servlet-name>
+		<url-pattern>/servletRedirect</url-pattern>
+	</servlet-mapping>
+	
+	<!--sevlet.demo08 -> 通过servlet进行定时页面跳转 -->
+	<servlet>
+		<servlet-name>ServletRefresh</servlet-name>
+		<servlet-class>com.wpx.servlet.demo08.ServletRefresh</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletRefresh</servlet-name>
+		<url-pattern>/servletRefresh</url-pattern>
+	</servlet-mapping>
+	
+	<!-- sevlet.demo09 -> 统计网站访问次数 -->
+	<servlet>
+		<servlet-name>ServletCount</servlet-name>
+		<servlet-class>com.wpx.servlet.demo09.ServletCount</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletCount</servlet-name>
+		<url-pattern>/servletCount</url-pattern>
+	</servlet-mapping>
+	
+	<!-- sevlet.demo10 -> Request常用API -->
+	<servlet>
+		<servlet-name>ServletRequest</servlet-name>
+		<servlet-class>com.wpx.servlet.demo10.ServletRequest</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletRequest</servlet-name>
+		<url-pattern>/servletRequest</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ServletLogin</servlet-name>
+		<servlet-class>com.wpx.servlet.demo11.ServletLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletLogin</servlet-name>
+		<url-pattern>/servletLogin</url-pattern>
+	</servlet-mapping>
 </web-app>
