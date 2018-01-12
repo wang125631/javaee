@@ -26,7 +26,7 @@ public class ServletRedirect extends HttpServlet{
 		//设置状态
 		resp.setStatus(302);
 		//要跳转的地址
-		resp.setHeader("location", "servlet/302.html");
+		resp.setHeader("location", "servlet/302.jsp");
 	}
 
 }

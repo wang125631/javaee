@@ -7,7 +7,7 @@
 <title>用户登录模拟</title>
 </head>
 <body>
-<form action="/servletLogin">
+<form action="servletLogin">
 	<table>
 	<tr>
 		<td>username:</td>

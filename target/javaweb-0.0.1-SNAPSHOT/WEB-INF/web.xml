@@ -103,6 +103,7 @@
 		<url-pattern>/servletRequest</url-pattern>
 	</servlet-mapping>
 	
+	<!-- servlet.demo11 -> 用户登录功能模拟 -->
 	<servlet>
 		<servlet-name>ServletLogin</servlet-name>
 		<servlet-class>com.wpx.servlet.demo11.ServletLogin</servlet-class>
@@ -110,5 +111,65 @@
 	<servlet-mapping>
 		<servlet-name>ServletLogin</servlet-name>
 		<url-pattern>/servletLogin</url-pattern>
+	</servlet-mapping>
+	
+	<!-- servlet.demo12 -> 重定向和转发 -->
+	<servlet>
+		<servlet-name>ServletRedirectAndDispatcher</servlet-name>
+		<servlet-class>com.wpx.servlet.demo12.ServletRedirectAndDispatcher</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletRedirectAndDispatcher</servlet-name>
+		<url-pattern>/servletRedirectAndDispatcher</url-pattern>
+	</servlet-mapping>
+	
+	<!-- servlet.demo13 -> 中文乱码 -->
+	<servlet>
+		<servlet-name>ServletCharset</servlet-name>
+		<servlet-class>com.wpx.servlet.demo13.ServletCharset</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletCharset</servlet-name>
+		<url-pattern>/servletCharset</url-pattern>
+	</servlet-mapping>
+	
+	<!-- servlet.demo14 -> 禁止缓存 -->
+	<servlet>
+		<servlet-name>ServletNoCache</servlet-name>
+		<servlet-class>com.wpx.servlet.demo14.ServletNoCache</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletNoCache</servlet-name>
+		<url-pattern>/servletNoCache</url-pattern>
+	</servlet-mapping>
+	
+	<!-- servlet.demo15 -> 文件下载 -->
+	<servlet>
+		<servlet-name>ServletDownload</servlet-name>
+		<servlet-class>com.wpx.servlet.demo15.ServletDownload</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletDownload</servlet-name>
+		<url-pattern>/servletDownload</url-pattern>
+	</servlet-mapping>
+	
+	<!-- servlet.demo16 -> 验证码 -->
+	<servlet>
+		<servlet-name>ServletCheckCode</servlet-name>
+		<servlet-class>com.wpx.servlet.demo16.ServletCheckCode</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletCheckCode</servlet-name>
+		<url-pattern>/servletCheckCode</url-pattern>
+	</servlet-mapping>
+	
+	<!-- servlet.demo17 -> 用户追踪之 Session -->
+	<servlet>
+		<servlet-name>ServletCart</servlet-name>
+		<servlet-class>com.wpx.servlet.demo17.ServletCart</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletCart</servlet-name>
+		<url-pattern>/servletCart</url-pattern>
 	</servlet-mapping>
 </web-app>

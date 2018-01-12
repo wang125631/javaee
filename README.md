@@ -79,7 +79,7 @@ jdbc
 	jdbc.demo06	-> mysql事务
 	jdbc.demo07	-> jdbc事务处理
 
-Servlet(Servlet部分需要修改web.xml)--Servlet/ServletContext
+Servlet(Servlet部分需要修改web.xml)
 
 	servlet.demo01 -> Tomcat/服务器简介
 	servlet.demo02 -> 第一个前后端交互案例
@@ -92,6 +92,14 @@ Servlet(Servlet部分需要修改web.xml)--Servlet/ServletContext
 	servlet.demo09 -> 统计网站访问次数
 	servlet.demo10 -> Request常用API
 	servlet.demo11 -> 用户登录功能模拟
+	servlet.demo12 -> 重定向和转发
+	servlet.demo13 -> 中文乱码
+	servlet.demo14 -> 禁止缓存
+	servlet.demo15 -> 文件下载
+	servlet.demo16 -> 验证码
+	servlet.demo17 -> 用户追踪之--Session
+	servlet.demo18 -> 用户追踪之--Cookies
+	
 
 spring
 	
