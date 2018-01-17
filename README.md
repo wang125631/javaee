@@ -98,7 +98,12 @@ Servlet(Servlet部分需要修改web.xml)
 	servlet.demo15 -> 文件下载
 	servlet.demo16 -> 验证码
 	servlet.demo17 -> 用户追踪之--Session
-	servlet.demo18 -> 用户追踪之--Cookies
+	servlet.demo18 -> 用户追踪之--Cookie
+	servlet.demo19 -> EL表达式
+	servlet.demo20 -> jstl标签
+	servlet.demo21 -> 分页
+	servlet.demo22 -> Listener
+	servlet.demo23 -> Filter
 	
 
 spring

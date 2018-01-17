@@ -172,4 +172,23 @@
 		<servlet-name>ServletCart</servlet-name>
 		<url-pattern>/servletCart</url-pattern>
 	</servlet-mapping>
+	
+	<!-- servlet.demo18 -> 用户追踪之Cookie -->
+	<servlet>
+		<servlet-name>ServletGoods</servlet-name>
+		<servlet-class>com.wpx.servlet.demo18.ServletGoods</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletGoods</servlet-name>
+		<url-pattern>/servletGoods</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ServletRemove</servlet-name>
+		<servlet-class>com.wpx.servlet.demo18.ServletRemove</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletRemove</servlet-name>
+		<url-pattern>/servletRemove</url-pattern>
+	</servlet-mapping>
 </web-app>
