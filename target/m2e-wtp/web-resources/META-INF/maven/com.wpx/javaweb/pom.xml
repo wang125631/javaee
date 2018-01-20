@@ -130,6 +130,7 @@
 
 	
 	<build>
+
 		<pluginManagement>
 			<plugins>
 				<!-- 配置Tomcat插件 -->
@@ -139,6 +140,7 @@
 					<version>2.2</version>
 				</plugin>
 			</plugins>
+
 		</pluginManagement>
 		<resources>
             <resource>

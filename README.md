@@ -101,7 +101,7 @@ Servlet(Servlet部分需要修改web.xml)
 	servlet.demo18 -> 用户追踪之--Cookie
 	servlet.demo19 -> EL表达式
 	servlet.demo20 -> jstl标签
-	servlet.demo21 -> 分页
+	servlet.demo21 -> 客户信息分页查询
 	servlet.demo22 -> Listener
 	servlet.demo23 -> Filter
 	

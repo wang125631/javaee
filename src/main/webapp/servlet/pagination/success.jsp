@@ -10,6 +10,6 @@
 
 <h1>页面添加成功</h1>
 
-<a href="${pageContext.request.contextPath}/"></a>
+<a href="${pageContext.request.contextPath}/servletShowCustomer">显示所有客户信息</a>
 </body>
 </html>

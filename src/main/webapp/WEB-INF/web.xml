@@ -201,4 +201,12 @@
 		<servlet-name>ServletAddCustomer</servlet-name>
 		<url-pattern>/servletAddCustomer</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>ServletShowCustomer</servlet-name>
+		<servlet-class>com.wpx.servlet.demo21.ServletShowCustomer</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletShowCustomer</servlet-name>
+		<url-pattern>/servletShowCustomer</url-pattern>
+	</servlet-mapping>
 </web-app>

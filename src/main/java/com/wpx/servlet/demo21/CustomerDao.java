@@ -23,7 +23,7 @@ public class CustomerDao {
 		prepareStatement.setInt(2, pageNum);
 		ResultSet resultSet = prepareStatement.executeQuery();
 		List<Customer> customerList=new ArrayList<Customer>();
-		if(resultSet.next()) {
+		while(resultSet.next()) {
 			Customer c=new Customer();
 			c.setId(resultSet.getString("id"));
 			c.setName(resultSet.getString("name"));
@@ -31,7 +31,7 @@ public class CustomerDao {
 			c.setBirthday(DateUtils.formatString(resultSet.getString("birthday")));
 			c.setCellphone(resultSet.getString("cellphone"));
 			c.setEmail(resultSet.getString("email"));
-			c.setPreference(resultSet.getString("perference"));
+			c.setPreference(resultSet.getString("preference"));
 			c.setType(resultSet.getString("type"));
 			c.setDescription(resultSet.getString("description"));
 			customerList.add(c);
@@ -55,10 +55,13 @@ public class CustomerDao {
 	}
 	//查询总记录数
 	public int findAllCount(Connection connection) throws SQLException {
-		String sql="SELECT COUNT(*) COUNT FROM customer";
+		String sql="SELECT COUNT(*) count FROM customer";
 		PreparedStatement prepareStatement = connection.prepareStatement(sql);
 		ResultSet resultSet = prepareStatement.executeQuery();
-		return resultSet.getInt("count");
+		if(resultSet.next()) {
+			return resultSet.getInt("count");
+		}
+		return 0;
 	}
 	
 }

@@ -9,17 +9,12 @@ import java.util.List;
  */
 public class PageBean {
 
-	private int pageNum; //页码
+	private int pageNum;//页面记录数
 	private int currentPage; //当前页
 	private int totalPage; //总页数
 	private int totalCount; //总记录数
 	private List<Customer> csList;//每页数据
-	public int getPageNum() {
-		return pageNum;
-	}
-	public void setPageNum(int pageNum) {
-		this.pageNum = pageNum;
-	}
+
 	public int getCurrentPage() {
 		return currentPage;
 	}

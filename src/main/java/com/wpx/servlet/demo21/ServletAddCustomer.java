@@ -2,6 +2,7 @@ package com.wpx.servlet.demo21;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.text.ParseException;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -21,6 +22,7 @@ public class ServletAddCustomer extends HttpServlet{
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		req.setCharacterEncoding("utf-8");
 		resp.setContentType("text/html;charset=utf-8");
 		CustomerService service = new CustomerService();
 		
@@ -35,6 +37,26 @@ public class ServletAddCustomer extends HttpServlet{
 		String description = req.getParameter("description");
 		
 		Customer customer=new Customer();
+		try {
+			
+			customer.setId(IdUtils.getUUID());
+			customer.setName(name);
+			customer.setGender(gender);
+			customer.setBirthday(DateUtils.formatString(birthday));
+			
+			customer.setCellphone(cellphone);
+			customer.setEmail(email);
+			customer.setPreference(preference);
+			customer.setType(type);
+			
+			customer.setDescription(description);
+			
+			
+			
+		} catch (ParseException e1) {
+			e1.printStackTrace();
+		}
+		
 		try {
 			service.addCustomer(customer);
 			resp.sendRedirect("/javaweb/servlet/pagination/success.jsp");
