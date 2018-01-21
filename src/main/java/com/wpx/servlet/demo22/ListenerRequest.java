@@ -2,7 +2,11 @@ package com.wpx.servlet.demo22;
 
 import javax.servlet.ServletRequestEvent;
 import javax.servlet.ServletRequestListener;
-
+/**
+ * 用于监听Request的创建于销毁
+ * 
+ * @author wangpx
+ */
 public class ListenerRequest implements ServletRequestListener {
 
 	@Override

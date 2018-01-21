@@ -1,212 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
-  <display-name>spring-demo01</display-name>
+  <display-name>struts</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
-  
-  			<!--	sevlet.demo02 -> 第一个前后端交互案例  -->
- 	<servlet>
-		<servlet-name>ServletDemo01</servlet-name>
-		<servlet-class>com.wpx.servlet.demo02.ServletDemo01</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletDemo01</servlet-name>
-		<url-pattern>/servletDemo01</url-pattern>
-	</servlet-mapping>
-	
-		<!-- sevlet.demo03 -> Servlet接口  -->
-	<servlet>
-		<servlet-name>ServletInterface</servlet-name>
-		<servlet-class>com.wpx.servlet.demo03.ServletInterface</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletInterface</servlet-name>
-		<url-pattern>/servletInterface</url-pattern>
-	</servlet-mapping>
-	
-		<!-- sevlet.demo04 -> GenericServlet  -->
-	<servlet>
-		<servlet-name>ServletGenerice</servlet-name>
-		<servlet-class>com.wpx.servlet.demo04.ServletGenerice</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletGenerice</servlet-name>
-		<url-pattern>/servletGenerice</url-pattern>
-	</servlet-mapping>
-	
-	<!-- sevlet.demo05 -> 初始化参数  -->
-	<servlet>
-		<servlet-name>InitParameter</servlet-name>
-		<servlet-class>com.wpx.servlet.demo05.InitParameter</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>InitParameter</servlet-name>
-		<url-pattern>/initParameter</url-pattern>
-	</servlet-mapping>
-	
-	<!-- sevlet.demo06 -> ServletConfig对象 -->
-	<servlet>
-		<servlet-name>ServletConfigObject</servlet-name>
-		<servlet-class>com.wpx.servlet.demo06.ServletConfigObject</servlet-class>
-		<init-param>
-			<param-name>username</param-name>
-			<param-value>wpx</param-value>
-		</init-param>
-		<init-param>
-			<param-name>password</param-name>
-			<param-value>123456</param-value>
-		</init-param>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletConfigObject</servlet-name>
-		<url-pattern>/servletConfigObject</url-pattern>
-	</servlet-mapping>
-	
-	<!--sevlet.demo07 -> 通过servlet进行页面跳转  -->
-	<servlet>
-		<servlet-name>ServletRedirect</servlet-name>
-		<servlet-class>com.wpx.servlet.demo07.ServletRedirect</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletRedirect</servlet-name>
-		<url-pattern>/servletRedirect</url-pattern>
-	</servlet-mapping>
-	
-	<!--sevlet.demo08 -> 通过servlet进行定时页面跳转 -->
-	<servlet>
-		<servlet-name>ServletRefresh</servlet-name>
-		<servlet-class>com.wpx.servlet.demo08.ServletRefresh</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletRefresh</servlet-name>
-		<url-pattern>/servletRefresh</url-pattern>
-	</servlet-mapping>
-	
-	<!-- sevlet.demo09 -> 统计网站访问次数 -->
-	<servlet>
-		<servlet-name>ServletCount</servlet-name>
-		<servlet-class>com.wpx.servlet.demo09.ServletCount</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletCount</servlet-name>
-		<url-pattern>/servletCount</url-pattern>
-	</servlet-mapping>
-	
-	<!-- sevlet.demo10 -> Request常用API -->
-	<servlet>
-		<servlet-name>ServletRequest</servlet-name>
-		<servlet-class>com.wpx.servlet.demo10.ServletRequest</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletRequest</servlet-name>
-		<url-pattern>/servletRequest</url-pattern>
-	</servlet-mapping>
-	
-	<!-- servlet.demo11 -> 用户登录功能模拟 -->
-	<servlet>
-		<servlet-name>ServletLogin</servlet-name>
-		<servlet-class>com.wpx.servlet.demo11.ServletLogin</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletLogin</servlet-name>
-		<url-pattern>/servletLogin</url-pattern>
-	</servlet-mapping>
-	
-	<!-- servlet.demo12 -> 重定向和转发 -->
-	<servlet>
-		<servlet-name>ServletRedirectAndDispatcher</servlet-name>
-		<servlet-class>com.wpx.servlet.demo12.ServletRedirectAndDispatcher</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletRedirectAndDispatcher</servlet-name>
-		<url-pattern>/servletRedirectAndDispatcher</url-pattern>
-	</servlet-mapping>
-	
-	<!-- servlet.demo13 -> 中文乱码 -->
-	<servlet>
-		<servlet-name>ServletCharset</servlet-name>
-		<servlet-class>com.wpx.servlet.demo13.ServletCharset</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletCharset</servlet-name>
-		<url-pattern>/servletCharset</url-pattern>
-	</servlet-mapping>
-	
-	<!-- servlet.demo14 -> 禁止缓存 -->
-	<servlet>
-		<servlet-name>ServletNoCache</servlet-name>
-		<servlet-class>com.wpx.servlet.demo14.ServletNoCache</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletNoCache</servlet-name>
-		<url-pattern>/servletNoCache</url-pattern>
-	</servlet-mapping>
-	
-	<!-- servlet.demo15 -> 文件下载 -->
-	<servlet>
-		<servlet-name>ServletDownload</servlet-name>
-		<servlet-class>com.wpx.servlet.demo15.ServletDownload</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletDownload</servlet-name>
-		<url-pattern>/servletDownload</url-pattern>
-	</servlet-mapping>
-	
-	<!-- servlet.demo16 -> 验证码 -->
-	<servlet>
-		<servlet-name>ServletCheckCode</servlet-name>
-		<servlet-class>com.wpx.servlet.demo16.ServletCheckCode</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletCheckCode</servlet-name>
-		<url-pattern>/servletCheckCode</url-pattern>
-	</servlet-mapping>
-	
-	<!-- servlet.demo17 -> 用户追踪之 Session -->
-	<servlet>
-		<servlet-name>ServletCart</servlet-name>
-		<servlet-class>com.wpx.servlet.demo17.ServletCart</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletCart</servlet-name>
-		<url-pattern>/servletCart</url-pattern>
-	</servlet-mapping>
-	
-	<!-- servlet.demo18 -> 用户追踪之Cookie -->
-	<servlet>
-		<servlet-name>ServletGoods</servlet-name>
-		<servlet-class>com.wpx.servlet.demo18.ServletGoods</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletGoods</servlet-name>
-		<url-pattern>/servletGoods</url-pattern>
-	</servlet-mapping>
-	
-	<servlet>
-		<servlet-name>ServletRemove</servlet-name>
-		<servlet-class>com.wpx.servlet.demo18.ServletRemove</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletRemove</servlet-name>
-		<url-pattern>/servletRemove</url-pattern>
-	</servlet-mapping>
-	
-	<!-- servlet.demo21 -> 分页 -->
-	<servlet>
-		<servlet-name>ServletAddCustomer</servlet-name>
-		<servlet-class>com.wpx.servlet.demo21.ServletAddCustomer</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletAddCustomer</servlet-name>
-		<url-pattern>/servletAddCustomer</url-pattern>
-	</servlet-mapping>
-	<servlet>
-		<servlet-name>ServletShowCustomer</servlet-name>
-		<servlet-class>com.wpx.servlet.demo21.ServletShowCustomer</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>ServletShowCustomer</servlet-name>
-		<url-pattern>/servletShowCustomer</url-pattern>
-	</servlet-mapping>
+      <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+    <!-- 通过上下文参数指定spring配置文件位置 -->
+  <context-param>
+  	<param-name>contextConfigLocation</param-name>
+  	<param-value>classpath:spring.xml</param-value>
+  </context-param>
+ <!-- 配置struts2的过滤器 -->
+  <filter>
+  	<filter-name>struts2</filter-name>
+  	<filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>struts2</filter-name>
+  	<url-pattern>*.action</url-pattern>
+  	<dispatcher>REQUEST</dispatcher>
+  	<dispatcher>FORWARD</dispatcher>
+  </filter-mapping>
 </web-app>

@@ -7,7 +7,8 @@ import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 /**
- * 同于监听Session
+ * 用于监听Session的创建于销毁
+ * 
  * @author wangpx
  */
 public class ListenerSession implements HttpSessionListener{

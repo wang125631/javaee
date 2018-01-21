@@ -4,8 +4,44 @@
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
-  
-  			<!--	sevlet.demo02 -> 第一个前后端交互案例  -->
+
+  <!-- servlet.demo23 -> Filter -->
+	<filter>
+		<filter-name>FilterParam</filter-name>
+		<filter-class>com.wpx.servlet.demo23.FilterParam</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>FilterParam</filter-name>
+		<url-pattern>/filterParam</url-pattern>
+	</filter-mapping>
+	
+  	<!-- 登录过滤 -->
+  	<filter>
+  		<filter-name>FilterLogin</filter-name>
+  		<filter-class>com.wpx.servlet.demo23.FilterLogin</filter-class>
+  	</filter>
+  	<filter-mapping>
+  		<filter-name>FilterLogin</filter-name>
+		<url-pattern>/servlet/filter/success.jsp</url-pattern>
+  	</filter-mapping>
+    
+    <!-- servlet.demo22 -> Listener -->
+  <!-- 	<listener>
+  		<description>用于监听ServletContext的创建于销毁 </description>
+  		<listener-class>com.wpx.servlet.demo22.ListenerServletContext</listener-class>
+  	</listener>
+  	<listener>
+  		<description>用于监听Session的创建于销毁 </description>
+  		<listener-class>com.wpx.servlet.demo22.ListenerSession</listener-class>
+  	</listener>
+  	<listener>
+  		<description>用于监听Request的创建于销毁 </description>
+  		<listener-class>com.wpx.servlet.demo22.ListenerRequest</listener-class>
+  	</listener>
+  	 -->
+  	
+  	
+  	<!--	sevlet.demo02 -> 第一个前后端交互案例  -->
  	<servlet>
 		<servlet-name>ServletDemo01</servlet-name>
 		<servlet-class>com.wpx.servlet.demo02.ServletDemo01</servlet-class>
@@ -208,5 +244,15 @@
 	<servlet-mapping>
 		<servlet-name>ServletShowCustomer</servlet-name>
 		<url-pattern>/servletShowCustomer</url-pattern>
+	</servlet-mapping>
+	
+	<!-- servlet.demo23 -> Filter -->
+	<servlet>
+		<servlet-name>ServletLogin23</servlet-name>
+		<servlet-class>com.wpx.servlet.demo23.ServletLogin</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ServletLogin23</servlet-name>
+		<url-pattern>/login</url-pattern>
 	</servlet-mapping>
 </web-app>

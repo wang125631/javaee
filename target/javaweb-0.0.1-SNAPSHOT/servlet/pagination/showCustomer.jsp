@@ -45,14 +45,14 @@
 		上一页&nbsp;&nbsp;&nbsp;
 	</c:if>
 	<c:if test="${pageBean.currentPage != 1}">
-		<a href="${pageContext.request.contextPath}/servletShowCustomer?currentPage=${pageBean.currentPage}-1">上一页</a>&nbsp;&nbsp;&nbsp;
+		<a href="${pageContext.request.contextPath}/servletShowCustomer?currentPage=${pageBean.currentPage -1}">上一页</a>&nbsp;&nbsp;&nbsp;
 	</c:if>
 	
 	<c:if test="${pageBean.currentPage == pageBean.totalPage}">
 		下一页&nbsp;&nbsp;&nbsp;
 	</c:if>
 	<c:if test="${pageBean.currentPage != pageBean.totalPage}">
-		<a href="${pageContext.request.contextPath}/servletShowCustomer?currentPage=${pageBean.currentPage}+1">下一页</a>&nbsp;&nbsp;&nbsp;
+		<a href="${pageContext.request.contextPath}/servletShowCustomer?currentPage=${pageBean.currentPage+1}">下一页</a>&nbsp;&nbsp;&nbsp;
 	</c:if>
 	
 	<a href="${pageContext.request.contextPath}/servletShowCustomer?currentPage=${pageBean.totalPage}">尾页</a>
