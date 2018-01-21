@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="default" namespace="/" extends="struts-default">
+		
+		<!-- struts2.demo01 -> Hello Struts2 -->
+		<!-- 不指定方式则默认走execute方法  name相当于servlet的url class为action的处理类  result为结果 默认String为success -->
+		<action name="helloAction"  class="com.wpx.struts2.demo01.HelloAction">
+			<result>/struts2/success.jsp</result>
+		</action>
+		
+		<!-- struts2.demo02 -> 三种成为Action的方式 -->
+		<action name="pojo" class="com.wpx.struts2.demo02.Pojo">
+			<result>/struts2/success.jsp</result>
+		</action>
+		<action name="actionImpl" class="com.wpx.struts2.demo02.ActionImpl">
+			<result>/struts2/success.jsp</result>
+		</action>
+		<action name="actionExt" class="com.wpx.struts2.demo02.ActionExt">
+			<result>/struts2/success.jsp</result>
+		</action>
+		
+		<!-- struts2.demo03 -> 获取参数的三种方式 -->
+		<action name="attDriven" class="com.wpx.struts2.demo03.AttDriven" method="show">
+			<result name="main">/struts2/getParam/main.jsp</result>
+		</action>
+		<action name="pojoAttDriven" class="com.wpx.struts2.demo03.PojoAttDriven" method="show">
+			<result name="main">/struts2/getParam/main.jsp</result>
+		</action>
+		<action name="modDriven" class="com.wpx.struts2.demo03.ModDriven" method="show">
+			<result name="main">/struts2/getParam/main.jsp</result>
+		</action>
+		
+	</package>
+</struts>
