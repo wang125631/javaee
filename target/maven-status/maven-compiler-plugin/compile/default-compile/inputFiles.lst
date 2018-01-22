@@ -2,6 +2,7 @@ D:\nodejs\javaee\src\main\java\com\wpx\spring\demo20\AccountServiceImpl.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo20\AccountDaoImpl.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo07\UserDao.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo21\AccountDao.java
+D:\nodejs\javaee\src\main\java\com\wpx\struts2\demo04\ConvertorAction.java
 D:\nodejs\javaee\src\main\java\com\wpx\jdbc\demo05\Demo03.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo11\CustomerDaoImpl.java
 D:\nodejs\javaee\src\main\java\com\wpx\jdbc\demo07\JdbcUtils.java
@@ -65,6 +66,7 @@ D:\nodejs\javaee\src\main\java\com\wpx\jdbc\demo07\AccountService.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo19\AccountServiceImpl.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo05\Car01.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo21\AccountDaoImpl.java
+D:\nodejs\javaee\src\main\java\com\wpx\struts2\demo04\User.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo21\AccountService.java
 D:\nodejs\javaee\src\main\java\com\wpx\servlet\demo21\JdbcUtils.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo04\CustomerService.java
@@ -78,6 +80,7 @@ D:\nodejs\javaee\src\main\java\com\wpx\spring\demo09\UserDao.java
 D:\nodejs\javaee\src\main\java\com\wpx\springmvc\SpringMVCTest01.java
 D:\nodejs\javaee\src\main\java\com\wpx\servlet\demo21\DateUtils.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo12\MyAroundAdvice.java
+D:\nodejs\javaee\src\main\java\com\wpx\struts2\demo04\MyTypeConverter.java
 D:\nodejs\javaee\src\main\java\com\wpx\servlet\demo11\User.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo12\OrderDao.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo11\MyBeforeAdvice.java

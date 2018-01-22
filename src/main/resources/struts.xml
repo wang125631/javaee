@@ -33,5 +33,15 @@
 			<result name="main">/struts2/getParam/main.jsp</result>
 		</action>
 		
+		<!-- struts2.demo04 -> 类型转化 -->
+		<action name="convertorAction" class="com.wpx.struts2.demo04.ConvertorAction">	
+			<result name="input">/struts2/error.jsp</result>
+		</action>
+		
+		<!-- 数据校验 -->
+		<action name="userAction" class="com.wpx.struts2.demo05.UserAction">
+			<result name="input">/struts2/error.jsp</result>
+		</action>
+		
 	</package>
 </struts>

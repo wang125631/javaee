@@ -18,17 +18,12 @@
 		客户类型:<input type="text" name="type"><br>
 		客户备注:<input type="text" name="description"><br>
 		<input type="submit" value="添加">
-		<input type="button" value="alert" id="a">
+
 	</form>
 	<div align="center">
 		<font color="red">${add.message}</font>
 	</div>
 </body>
-<script type="text/javascript">
-	var a= document.getElementById("a");
-	a.click(function(){
-		var b=document.getElementById("b");	
-		alert(b.value);
-	});
-</script>
+
+
 </html>
