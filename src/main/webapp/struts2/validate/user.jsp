@@ -9,13 +9,13 @@
 <script language="javascript" type="text/javascript" src="../../My97DatePicker/WdatePicker.js"></script>
 </head>
 <body>
-<form action="${pageContext.request.contextPath}/convertorAction.action" method="post">
-	username: <input type="text" id="username" name="username"><s:fielderror fieldName="username.message"/><br>
-	password: <input type="text" id="password" name="password"><s:fielderror fieldName="password.message"/><br>
-	age: <input type="text" id="age" name="age"><s:fielderror fieldName="age.message"/><br>
+<form action="${pageContext.request.contextPath}/userAction.action" method="post">
+	username: <input type="text" id="username" name="username"><s:fielderror fieldName="username"/><br>
+	password: <input type="text" id="password" name="password"><s:fielderror fieldName="password"/><br>
+	age: <input type="text" id="age" name="age"><s:fielderror fieldName="age"/><br>
 	birthday: <input type="text" name="birthday" class="Wdate" onclick="WdatePicker()" readonly="readonly" >
-	email: <input type="text" name="email" ><s:fielderror fieldName="email.message"/><br>
-	phonenumber: <input type="text" name="phonenumber"><s:fielderror fieldName="phonenumber.message"/>
+	email: <input type="text" name="email" ><s:fielderror fieldName="email"/><br>
+	phonenumber: <input type="text" name="phonenumber"><s:fielderror fieldName="phonenumber"/>
 	
 	<input type="submit" value="登录" >
 </form>

@@ -72,9 +72,32 @@ public class UserAction extends ActionSupport{
 	public void setPhonenumber(String phonenumber) {
 		this.phonenumber = phonenumber;
 	}
-	@Override
-	public void validate() {
+	
+	public String getUsername() {
+		return username;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public int getAge() {
+		return age;
+	}
+	public Date getBirthday() {
+		return birthday;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public String getPhonenumber() {
+		return phonenumber;
+	}
+	
+	
+	public String paramValidate() {
 		
+		System.out.println("ParamValidate method ....");
+		
+		return null;
 	}
 
 }

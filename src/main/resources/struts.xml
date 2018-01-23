@@ -3,7 +3,28 @@
 	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
+	<!-- 设置struts的开发者模式,出现错误信息会显示详细页面 -->
+	<constant name="struts.devMode" value="true"/>
+	<!-- 配置全局的国际化资源 -->
+	<constant name="struts.custom.i18n.resources" value="com.wpx.struts2.demo06.message"></constant>
+	<!-- 配置 文件上传的大小 2m-->
+	<constant name="struts.multipart.maxSize" value="2097152"></constant>
+	
 	<package name="default" namespace="/" extends="struts-default">
+		
+			<interceptors>
+			<interceptor name="myInterceptor" class="com.wpx.struts2.demo07.MyInterceptor">
+				<param name="includeMethods">delete</param>
+			</interceptor>
+			<interceptor-stack name="myStack">
+				<interceptor-ref name="myInterceptor"></interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<!-- 配置全局结果处理 -->
+		<global-results>
+			<result>/struts2/success.jsp</result>
+		</global-results>
 		
 		<!-- struts2.demo01 -> Hello Struts2 -->
 		<!-- 不指定方式则默认走execute方法  name相当于servlet的url class为action的处理类  result为结果 默认String为success -->
@@ -39,9 +60,40 @@
 		</action>
 		
 		<!-- 数据校验 -->
-		<action name="userAction" class="com.wpx.struts2.demo05.UserAction">
-			<result name="input">/struts2/error.jsp</result>
+		<action name="userAction" class="com.wpx.struts2.demo05.UserAction" method="paramValidate">
+			<result name="input">/struts2/validate/user.jsp</result>
 		</action>
 		
+		<!-- struts2.demo06 -> 国际化 -->
+		<action name="actionI18n" class="com.wpx.struts2.demo06.ActionI18n">
+			<result>/struts2/i18n/i18nAction.jsp</result>
+		</action>
+		
+		<!-- struts2.demo07 -> 拦截器 -->
+		
+	
+		<action name="loginAction" class="com.wpx.struts2.demo07.LoginAction" method="login">
+			<result name="login">/struts2/interceptor/login.jsp</result>
+			<result>/struts2/interceptor/book.jsp</result>
+		</action>
+		<action method="{1}" name="bookAction_*" class="com.wpx.struts2.demo07.BookAction">
+			<interceptor-ref name="myStack"></interceptor-ref>
+			<result name="login">/struts2/interceptor/login.jsp</result>
+		</action>
+		
+		<!-- struts2.demo08 -> 文件的上传和下载 -->
+		<action name="uploadAction" class="com.wpx.struts2.demo08.UploadAction" >
+			<interceptor-ref name="defaultStack">
+				<param name="fileUpload.allowedExtensions">txt,doc,pdf,mp3</param>
+			</interceptor-ref>
+			<result>/struts2/uploadAndDownload/download.jsp</result>
+		</action>
+		<action name="downloadAction" class="com.wpx.struts2.demo08.DownloadAction">
+			<result type="stream">
+				<param name="contentType">${contentType}</param>
+				<param name="contentDisposition">attachment;filename=${downloadFileName}</param>
+				<param name="InputStream">${inputStream}</param>
+			</result>
+		</action>
 	</package>
 </struts>

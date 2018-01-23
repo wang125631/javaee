@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE validators PUBLIC
-		"-//Apache Struts//XWork Validator 1.0.3//EN"
-		"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+  <!DOCTYPE validators PUBLIC
+  		"-//Apache Struts//XWork Validator 1.0.3//EN"
+  		"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
 <validators>
 	<!-- 对用户名校验 -->
 	<field name="username">
@@ -26,7 +26,6 @@
 			<message>密码长度必须为${minLength} 到${maxLength} 之间</message>
 		</field-validator>
 	</field>
-	
 	<!-- 年龄校验 -->
 	<field name="age">
 		<field-validator type="int">

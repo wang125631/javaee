@@ -112,8 +112,9 @@ struts2
 	struts2.demo03 -> 获取参数的三种方式
 	struts2.demo04 -> 类型转化
 	struts2.demo05 -> 数据校验
-	struts2.demo06 -> 
-	struts2.demo07 -> 
+	struts2.demo06 -> 国际化
+	struts2.demo07 -> 拦截器
+	struts2.demo08 -> 文件的上传和下载
 		
 
 spring

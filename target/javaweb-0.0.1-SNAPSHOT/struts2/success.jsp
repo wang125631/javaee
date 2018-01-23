@@ -7,6 +7,6 @@
 <title>成功页面</title>
 </head>
 <body>
-<h1>Success页面</h1>
+<h1>Success Page</h1>
 </body>
 </html>

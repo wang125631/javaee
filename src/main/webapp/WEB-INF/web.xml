@@ -20,7 +20,9 @@
   <filter-mapping>
   	<filter-name>struts2</filter-name>
   	<url-pattern>*.action</url-pattern>
-  	<dispatcher>REQUEST</dispatcher>
-  	<dispatcher>FORWARD</dispatcher>
   </filter-mapping>
+	<filter-mapping>  
+    <filter-name>struts2</filter-name>  
+    <url-pattern>*.jsp</url-pattern>  
+</filter-mapping>
 </web-app>
