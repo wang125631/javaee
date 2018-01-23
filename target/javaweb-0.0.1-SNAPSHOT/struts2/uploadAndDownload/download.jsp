@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>成功页面</title>
+<title>文件下载</title>
 </head>
 <body>
-<h1>Success页面</h1>
+<a href="${pageContext.request.contextPath}/downloadAction.action?filename=文档说明.doc">文件下载</a>
 </body>
 </html>
