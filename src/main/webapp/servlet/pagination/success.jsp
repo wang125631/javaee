@@ -12,4 +12,5 @@
 
 <a href="${pageContext.request.contextPath}/servletShowCustomer">显示所有客户信息</a>
 </body>
+<!--1256317570@qq.com  -->
 </html>

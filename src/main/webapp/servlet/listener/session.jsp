@@ -12,4 +12,5 @@
 	session.setAttribute("name01", "value01");
 %>
 </body>
+<!--1256317570@qq.com  -->
 </html>

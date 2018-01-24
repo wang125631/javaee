@@ -57,5 +57,5 @@
 	
 	<a href="${pageContext.request.contextPath}/servletShowCustomer?currentPage=${pageBean.totalPage}">尾页</a>
 </body>
-
+<!--1256317570@qq.com  -->
 </html>

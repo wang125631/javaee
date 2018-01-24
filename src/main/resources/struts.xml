@@ -88,12 +88,21 @@
 			</interceptor-ref>
 			<result>/struts2/uploadAndDownload/download.jsp</result>
 		</action>
+		
 		<action name="downloadAction" class="com.wpx.struts2.demo08.DownloadAction">
 			<result type="stream">
 				<param name="contentType">${contentType}</param>
 				<param name="contentDisposition">attachment;filename=${downloadFileName}</param>
-				<param name="InputStream">${inputStream}</param>
+				<param name="inputStream">${inputStream}</param>
 			</result>
+		</action>
+		
+		<!-- struts2.demo09 -> ognl -->
+		<action name="ognlAction02" class="com.wpx.struts2.demo09.OgnlAction02">
+			<result>/struts2/ognl/ognl02.jsp</result>
+		</action>
+		<action name="ognlAction03" class="com.wpx.struts2.demo09.OgnlAction03">
+			<result>/sturts2/ognl/ognl03.jsp</result>
 		</action>
 	</package>
 </struts>

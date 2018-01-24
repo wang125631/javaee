@@ -80,6 +80,7 @@ D:\nodejs\javaee\src\main\java\com\wpx\servlet\demo21\JdbcUtils.java
 D:\nodejs\javaee\src\main\java\com\wpx\struts2\demo08\UploadAction.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo04\CustomerService.java
 D:\nodejs\javaee\src\main\java\com\wpx\jdbc\demo07\AccountServiceImpl.java
+D:\nodejs\javaee\src\main\java\com\wpx\struts2\demo09\OgnlAction02.java
 D:\nodejs\javaee\src\main\java\com\wpx\jdbc\demo07\AccountDao.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo09\SpringTest09.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo01\SpringTest01.java
@@ -93,6 +94,7 @@ D:\nodejs\javaee\src\main\java\com\wpx\struts2\demo04\MyTypeConverter.java
 D:\nodejs\javaee\src\main\java\com\wpx\servlet\demo11\User.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo12\OrderDao.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo11\MyBeforeAdvice.java
+D:\nodejs\javaee\src\main\java\com\wpx\struts2\demo09\OgnlAction01.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo01\HelloServiceImpl.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo04\CustomerServiceImpl.java
 D:\nodejs\javaee\src\main\java\com\wpx\threadpool\demo01\Extends.java

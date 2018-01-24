@@ -31,6 +31,7 @@ public class DownloadAction extends ActionSupport{
 	
 	public String getContentType() {
 		String mimeType = ServletActionContext.getServletContext().getMimeType(filename);
+		System.out.println(mimeType);
 		return mimeType;
 	}
 	
@@ -42,6 +43,7 @@ public class DownloadAction extends ActionSupport{
 	
 	public InputStream getInputStream() throws UnsupportedEncodingException, FileNotFoundException {
 		filename = new String(filename.getBytes("iso8859-1"),"utf-8");
+		System.out.println(filename);
 		FileInputStream fis = new FileInputStream(new File("D:/upload",filename));
 		return fis;
 	}
@@ -49,7 +51,7 @@ public class DownloadAction extends ActionSupport{
 	@Override
 	public String execute() throws Exception {
 		System.out.println("文件下载中...");
-		return null;
+		return SUCCESS;
 	}
 	
 }

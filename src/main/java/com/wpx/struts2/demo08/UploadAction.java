@@ -56,7 +56,7 @@ public class UploadAction extends ActionSupport {
 
 	@Override
 	public String execute() throws Exception {
-		FileUtils.copyFile(myFile,new File("D:/uplaod",myFileFileName));
+		FileUtils.copyFile(myFile,new File("D:/upload",myFileFileName));
 		return SUCCESS;
 	}
 
