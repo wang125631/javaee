@@ -22,6 +22,8 @@ public class OgnlAction03 extends ActionSupport{
 		studentList.add(new Student(3, "wangpx03"));
 		//获取值栈
 		ValueStack valueStack = ActionContext.getContext().getValueStack();
+		//push到值栈
+		valueStack.push(studentList);
 		//将数据存储到值栈中
 		valueStack.set("studentList", studentList);
 	

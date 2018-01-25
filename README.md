@@ -147,6 +147,8 @@ hibernate
 	
 	hibernate.demo01 -> hibernate实现增删改查
 	hibernate.demo02 -> get/load及配置说明
+	hibernate.demo03 -> 三种持久化对象的状态
+	
 	
 	
 springmvc 

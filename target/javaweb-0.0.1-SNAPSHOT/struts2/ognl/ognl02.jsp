@@ -27,6 +27,10 @@
 	<s:property value="#request.rname"/><br>
 	<s:property value="#session.sname"/><br>
 	<s:property value="#application.aname"/>
+	
+	<s:property value="attr.sname"/>
+	<s:property value="parameters.name[0]"/>
+	
 </body>
 <!--1256317570@qq.com  -->
 </html>

@@ -9,7 +9,36 @@
 </head>
 <body>
 <h1>使用ognl获取值栈中较为复杂的数据</h1>
+<!-- 通过push存储数据获取 -->
+<h2>通过push存储数据获取</h2>
 
+<br><hr>
+<s:property value="[0].top.studentList"/>
+
+<br><hr>
+<s:iterator value="[0].top.studentList" var="student">
+	学号:<s:property value="#student.id"/><br>
+	姓名:<s:property value="#student.name"/>
+</s:iterator>
+
+<br><hr>
+<s:iterator value="[0].top.studentList">
+	学号:<s:property value="id"/>
+	姓名:<s:property value="name"/>
+</s:iterator>
+
+<h2>使用set来存储数据</h2>
+<s:property value="studentList"/>
+<br><hr>
+<s:iterator value="studentList" var="student">
+	学号:<s:property value="#student.id"/>
+	姓名:<s:property value="#student.name"/>
+</s:iterator>
+<br><hr>
+<s:iterator value="studentList">
+	学号:<s:property value="id"/>
+	姓名:<s:property value="name"/>
+</s:iterator>
 
 
 </body>
