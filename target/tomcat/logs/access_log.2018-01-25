@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:10:44:14 +0800] "GET /javaweb/servlet/pagination/addCustomer.jsp HTTP/1.1" 200 1158 http-bio-8080-exec-1 1859
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:10:44:14 +0800] "GET /javaweb/My97DatePicker/WdatePicker.js HTTP/1.1" 200 9266 http-bio-8080-exec-2 7
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:10:44:14 +0800] "GET /javaweb/My97DatePicker/skin/WdatePicker.css HTTP/1.1" 200 158 http-bio-8080-exec-3 3
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:10:44:14 +0800] "GET /javaweb/My97DatePicker/skin/datePicker.gif HTTP/1.1" 200 1043 http-bio-8080-exec-4 1
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:10:44:15 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-5 0
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:10:44:21 +0800] "GET /javaweb/ognlAction03.action HTTP/1.1" 404 1013 http-bio-8080-exec-6 176
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:10:45:42 +0800] "GET //javaweb/sturts2/ognl/ognl03.jsp HTTP/1.1" 404 1015 http-bio-8080-exec-8 5
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:10:45:53 +0800] "GET /javaweb/sturts2/ognl/ognl02.jsp HTTP/1.1" 404 1013 http-bio-8080-exec-9 4
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:10:50:12 +0800] "GET /javaweb/servlet/pagination/addCustomer.jsp HTTP/1.1" 200 1158 http-bio-8080-exec-1 556
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:10:50:21 +0800] "GET /javaweb/ognlAction03.action HTTP/1.1" 200 1157 http-bio-8080-exec-2 1787
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:16:53:28 +0800] "GET /javaweb/struts2/uploadAndDownload/upload.jsp HTTP/1.1" 200 463 http-bio-8080-exec-1 1472
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:16:53:34 +0800] "GET /javaweb/struts2/duplicationForm/regist.jsp HTTP/1.1" 200 647 http-bio-8080-exec-2 747
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:16:53:37 +0800] "GET /javaweb/registAction.action?struts.token.name=token&token=17OGC9VBJQP0P2D4I5Z2KFZS8M4YKCZR&username=wangpx&password=123456 HTTP/1.1" 200 - http-bio-8080-exec-3 219
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:16:53:41 +0800] "GET /javaweb/registAction.action?struts.token.name=token&token=17OGC9VBJQP0P2D4I5Z2KFZS8M4YKCZR&username=wangpx&password=123456 HTTP/1.1" 404 1033 http-bio-8080-exec-4 153
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:16:53:53 +0800] "GET /javaweb/struts2/duplicationForm/regist.jsp HTTP/1.1" 200 647 http-bio-8080-exec-5 10
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:16:53:55 +0800] "GET /javaweb/registAction.action?struts.token.name=token&token=6RLTTHQ4IXKYV5DJORXXAZF8F5YAHMBG&username=wangpx&password=123456 HTTP/1.1" 200 - http-bio-8080-exec-6 67
+0:0:0:0:0:0:0:1 - - [25/Jan/2018:16:54:07 +0800] "GET /javaweb/registAction.action?struts.token.name=token&token=6RLTTHQ4IXKYV5DJORXXAZF8F5YAHMBG&username=wangpx&password=123456 HTTP/1.1" 404 1033 http-bio-8080-exec-7 127
