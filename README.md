@@ -145,9 +145,13 @@ spring
 	
 hibernate
 	
-	hibernate.demo01 -> hibernate实现增删改查
+	hibernate.demo01 -> Hibernate实现增删改查
 	hibernate.demo02 -> get/load及配置说明
-	hibernate.demo03 -> 三种持久化对象的状态
+	hibernate.demo03 -> 三种持久化对象的状态/工具类封装
+	hibernate.demo04 -> Hibernate的缓存 
+	hibernate.demo05 -> Hibernate关系映射---一对多
+	hibernate.demo06 -> Hibernate关系映射---一对一
+	hibernate.demo07 -> Hibernate关系映射---多对多	
 	
 	
 	
@@ -164,20 +168,16 @@ jvm
 	jvm.demo02 -> SurvivorRatio的配置说明
 	jvm.demo03 -> 堆内存溢出
 	jvm.demo04 -> 栈调用深度
-	jvm.demo05 -> 
-	jvm.demo06 -> 
-	jvm.demo07 -> 
-	jvm.demo08 -> 
-	jvm.demo09 -> 
+
 	
 threadpool
 	
 	threadpool.demo01 -> synchronized关键字 
 	threadpool.demo02 -> volatile 关键字
-	threadpool.demo03 -> 线程间通信
-	threadpool.demo04 -> 
-	threadpool.demo05 -> 
-	threadpool.demo06 -> 
-	
-	
+	threadpool.demo03 -> wait/notify |模拟Blocking Queue
+	threadpool.demo04 -> ThreadLocal
+	threadpool.demo05 -> 同步/并发类容器
+	threadpool.demo06 -> 并发的Queue
+	threadpool.demo07 -> Master-Worker模式
+	threadpool.demo08 -> Executors创建线程池/自定义线程池
 	
