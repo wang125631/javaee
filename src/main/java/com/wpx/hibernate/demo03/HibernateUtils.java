@@ -15,16 +15,20 @@ public class HibernateUtils {
 
 	private static SessionFactory sessionFactory;
 	
-	public static SessionFactory getSessionSessionFactory(Class<?> clazz) {
+	public static SessionFactory getSessionSessionFactory(Class<?>... clazz) {
 		if(sessionFactory == null) {
 			synchronized (clazz) {
 				if(sessionFactory == null) {
 					//加载配置文件
-					Configuration configuration = new Configuration().configure("hibernate.cfg.xml").addClass(clazz);
+					Configuration configuration = new Configuration().configure("hibernate.cfg.xml");
+					for (Class<?> class1 : clazz) {
+						configuration.addClass(class1);
+					}
+					
 					//注册标准服务
 					StandardServiceRegistry standardServiceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
 					//通过配置创建sessionFactory
-					sessionFactory = configuration.buildSessionFactory();
+					sessionFactory = configuration.buildSessionFactory(standardServiceRegistry);
 				}
 			}
 		}

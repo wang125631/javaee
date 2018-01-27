@@ -6,14 +6,15 @@ package com.wpx.hibernate.demo05;
  */
 public class Order {
 	
-	private int id;
+	private int oid;
 	private String addr;
 	private Customer customer;
-	public int getId() {
-		return id;
+
+	public int getOid() {
+		return oid;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public void setOid(int oid) {
+		this.oid = oid;
 	}
 	public String getAddr() {
 		return addr;
@@ -25,6 +26,14 @@ public class Order {
 		return customer;
 	}
 	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+	public Order() {
+	
+	}
+	public Order(String addr, Customer customer) {
+		super();
+		this.addr = addr;
 		this.customer = customer;
 	}
 	

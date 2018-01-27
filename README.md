@@ -150,8 +150,9 @@ hibernate
 	hibernate.demo03 -> 三种持久化对象的状态/工具类封装
 	hibernate.demo04 -> Hibernate的缓存 
 	hibernate.demo05 -> Hibernate关系映射---一对多
-	hibernate.demo06 -> Hibernate关系映射---一对一
-	hibernate.demo07 -> Hibernate关系映射---多对多	
+	hibernate.demo06 -> Hibernate关系映射---多对多
+	hibernate.demo07 -> Hibernate关系映射---一对一
+	hibernate.demo08 -> Hibernate的数据检索	
 	
 	
 	
