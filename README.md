@@ -182,3 +182,10 @@ threadpool
 	threadpool.demo07 -> Master-Worker模式
 	threadpool.demo08 -> Executors创建线程池/自定义线程池
 	
+netty
+	
+	netty.demo01 -> 传统的BIO
+	netty.demo02 -> 伪异步的BIO
+	netty.demo03 -> 非阻塞的NIO
+	netty.demo04 -> 异步非阻塞的AIO
+	
