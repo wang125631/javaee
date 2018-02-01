@@ -1,0 +1,10 @@
+0:0:0:0:0:0:0:1 - - [01/Feb/2018:11:47:10 +0800] "GET /javaweb/spring-mvc/demo01/demo01.jsp HTTP/1.1" 404 1023 http-bio-8080-exec-1 109
+0:0:0:0:0:0:0:1 - - [01/Feb/2018:11:47:10 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-2 0
+0:0:0:0:0:0:0:1 - - [01/Feb/2018:11:47:27 +0800] "GET /javaweb/spring-mvc/demo01/helloSpringMVC.jsp HTTP/1.1" 404 1039 http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [01/Feb/2018:11:47:37 +0800] "GET /javaweb/spring-mvc/demo01/helloSpringmvc.jsp HTTP/1.1" 404 1039 http-bio-8080-exec-4 0
+0:0:0:0:0:0:0:1 - - [01/Feb/2018:11:48:01 +0800] "GET /javaweb/spring-mvc/helloSpringmvc.jsp HTTP/1.1" 200 299 http-bio-8080-exec-5 1370
+0:0:0:0:0:0:0:1 - - [01/Feb/2018:11:48:03 +0800] "GET /javaweb/spring-mvc/hello.do HTTP/1.1" 404 949 http-bio-8080-exec-6 31
+0:0:0:0:0:0:0:1 - - [01/Feb/2018:11:49:22 +0800] "GET /javaweb/spring-mvc/demo01/hello.do HTTP/1.1" 200 283 http-bio-8080-exec-8 173
+0:0:0:0:0:0:0:1 - - [01/Feb/2018:14:14:25 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 200 270 http-bio-8080-exec-1 1202
+0:0:0:0:0:0:0:1 - - [01/Feb/2018:19:01:50 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 500 4422 http-bio-8080-exec-1 1010
+0:0:0:0:0:0:0:1 - - [01/Feb/2018:19:01:50 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-2 0
