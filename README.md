@@ -152,8 +152,7 @@ hibernate
 	hibernate.demo05 -> Hibernate关系映射---一对多
 	hibernate.demo06 -> Hibernate关系映射---多对多
 	hibernate.demo07 -> Hibernate关系映射---一对一
-	hibernate.demo08 -> Hibernate的数据检索	
-	
+	hibernate.demo08 -> Hibernate的数据检索/检索优化	
 	
 	
 springmvc 
@@ -161,7 +160,7 @@ springmvc
 	spring.demo01 -> springmvc的HelloWorld
 	spring.demo02 -> springMVC的工作流程
 	spring.demo03 -> springMVC的PathVariable注解
-	spring.demo04 -> org.springframework.web.filter.HiddenHttpMethodFilter
+	spring.demo04 -> RESTful的CRUD
 
 jvm
 
@@ -188,4 +187,5 @@ netty
 	netty.demo02 -> 伪异步的BIO
 	netty.demo03 -> 非阻塞的NIO
 	netty.demo04 -> 异步非阻塞的AIO
+	netty.demo05 -> 使用Netty实现简单通讯
 	

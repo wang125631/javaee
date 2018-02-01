@@ -27,7 +27,17 @@
 		* create-drop	:每次执行的时候,创建一个新的表,程序执行结束后将这个表,删除掉了.	一般测试的时候使用.
 		* update			:如果数据库中没有表,创建一个新的表,如果有了,直接使用这个表.可以更新表的结构.
 		* validate		:会使用原有的表.完成校验.校验映射文件与表中配置的字段是否一致.不一致报错. -->
-		<property name="hibernate.hbm2ddl.auto">update</property>
+	<property name="hibernate.hbm2ddl.auto">update</property>
+		<!-- 
+		1—Read uncommitted isolation
+		2—Read committed isolation
+		4—Repeatable read isolation
+		8—Serializable isolation
+	 -->
+	<property name="hibernate.connection.isolation">1</property>
+	<!-- 使用当前线程中的session -->
+	<property name="hibernate.current_session_context_class">thread</property>
+		
 	<!-- 通知Hibernate加载那些映射文件 -->
 	<mapping resource="com/wpx/hibernate/demo02/Customer.hbm.xml" />
 </session-factory>

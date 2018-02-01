@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 @RequestMapping("/spring-mvc/demo03")
-public class SpringMVCTest03 {
+public class PathVariableTest {
 	
 	@RequestMapping("/demo03/{id}")
 	public void showPathVariable(@PathVariable("id") Integer id) {

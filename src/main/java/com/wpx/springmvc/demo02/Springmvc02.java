@@ -29,7 +29,7 @@ package com.wpx.springmvc.demo02;
  * @author wangpx
  */
 
-public class SpringMVCTest02 {
+public class Springmvc02 {
 
 	
 }

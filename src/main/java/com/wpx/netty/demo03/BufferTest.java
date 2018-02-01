@@ -75,10 +75,12 @@ public class BufferTest {
 		IntBuffer buffer2 = IntBuffer.wrap(arr, 0, 2);
 		System.out.println(buffer2);
 	}
+	
 	/**
 	 * 其他方法
 	 * 
 	 */
+	
 	@Test
 	public void demo05() {
 		IntBuffer buffer = IntBuffer.allocate(10);

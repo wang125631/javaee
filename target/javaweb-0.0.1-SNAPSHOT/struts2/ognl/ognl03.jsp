@@ -23,7 +23,7 @@
 
 <br><hr>
 <s:iterator value="[0].top.studentList">
-	学号:<s:property value="id"/><br>
+	学号:<s:property value="id"/>
 	姓名:<s:property value="name"/>
 </s:iterator>
 

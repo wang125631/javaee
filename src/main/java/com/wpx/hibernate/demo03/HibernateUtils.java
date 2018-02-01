@@ -34,4 +34,8 @@ public class HibernateUtils {
 		}
 		return sessionFactory;
 	}
+	
+	public static  Session getCurrentSession() {
+		return sessionFactory.getCurrentSession();
+	}
 }

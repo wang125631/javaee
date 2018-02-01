@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 @Controller
 @RequestMapping("/spring-mvc/demo01")
-public class SpringMVCTest01 {
+public class HelloSpringmvc {
 
 	@RequestMapping("/hello")
 	public String hello() {

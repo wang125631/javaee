@@ -19,6 +19,7 @@
 		<log4j.version>1.2.12</log4j.version>
 		
 		<struts2.version>2.3.24</struts2.version>
+		<netty.version>5.0.0.Alpha2</netty.version>
 		
    </properties>
 		  <dependencies>
@@ -154,6 +155,14 @@
 			<version>${struts2.version}</version>
 		</dependency>
 		<!-- struts2 end -->
+		<!-- netty start -->
+		<dependency>
+		    <groupId>io.netty</groupId>
+		    <artifactId>netty-all</artifactId>
+		    <version>${netty.version}</version>
+		</dependency>
+		
+		<!-- netty end -->
 		
 	  </dependencies>
 	  
