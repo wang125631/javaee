@@ -188,4 +188,6 @@ netty
 	netty.demo03 -> 非阻塞的NIO
 	netty.demo04 -> 异步非阻塞的AIO
 	netty.demo05 -> 使用Netty实现简单通讯
+	netty.demo06 -> Netty中粘/拆包问题(行分隔,自定义分隔,固定长度)
+	netty.demo07 -> Netty中编/解码问题
 	

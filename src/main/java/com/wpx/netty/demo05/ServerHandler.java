@@ -1,6 +1,7 @@
 package com.wpx.netty.demo05;
 
 import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.util.ReferenceCountUtil;
@@ -22,6 +23,8 @@ public class ServerHandler extends ChannelHandlerAdapter{
 			buf.readBytes(data);
 			String request = new String(data,"utf-8");
 			System.out.println("Client: "+request);
+			ctx.channel().writeAndFlush(Unpooled.copiedBuffer("Hello ".getBytes()));
+			
 		} finally {
 			ReferenceCountUtil.release(msg);
 		}

@@ -19,8 +19,11 @@
 		<log4j.version>1.2.12</log4j.version>
 		
 		<struts2.version>2.3.24</struts2.version>
-		<netty.version>5.0.0.Alpha2</netty.version>
 		
+		<!-- netty相关 -->
+		<netty.version>5.0.0.Alpha2</netty.version>
+		<msgpack.version>0.6.12</msgpack.version>
+
    </properties>
 		  <dependencies>
 		  <!-- MySql -->
@@ -155,14 +158,21 @@
 			<version>${struts2.version}</version>
 		</dependency>
 		<!-- struts2 end -->
-		<!-- netty start -->
+		<!-- netty相关 start -->
 		<dependency>
 		    <groupId>io.netty</groupId>
 		    <artifactId>netty-all</artifactId>
 		    <version>${netty.version}</version>
 		</dependency>
+		<!--MessagePack -->
+		<dependency>
+		    <groupId>org.msgpack</groupId>
+		    <artifactId>msgpack</artifactId>
+		    <version>${msgpack.version}</version>
+		</dependency>
 		
-		<!-- netty end -->
+		
+		<!-- netty相关 end -->
 		
 	  </dependencies>
 	  
@@ -170,6 +180,18 @@
 
 	
 	<build>
+
+		<plugins>
+	        <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-compiler-plugin</artifactId>
+	            <version>3.5.1</version>
+	            <configuration>
+	                <source>1.8</source>
+	                <target>1.8</target>
+	            </configuration>
+	        </plugin>
+	    </plugins>
 
 		<pluginManagement>
 			<plugins>

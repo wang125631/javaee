@@ -9,10 +9,10 @@
 </head>
 <body>
 	<a href="list.do"> 显示所有员工信息</a>
-	<c:if test="${empty requestScope.employees }">
+	<c:if test="${ empty requestScope.employees}">
 		没有任何员工信息
 	</c:if>
-	<c:if test="${!empty requestScope.employees}">
+	<c:if test="${ !empty requestScope.employees}">
 		<table>
 			<tr>
 				<th>id</th>
