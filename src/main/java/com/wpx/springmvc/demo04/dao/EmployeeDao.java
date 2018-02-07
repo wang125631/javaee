@@ -56,5 +56,8 @@ public class EmployeeDao {
 		employees.remove(id);
 	}
 	
+	public void updateEmployee(Employee employee) {
+		employees.put(employee.getId(), employee);
+	}
 	
 }

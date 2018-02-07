@@ -23,7 +23,10 @@
 		<!-- netty相关 -->
 		<netty.version>5.0.0.Alpha2</netty.version>
 		<msgpack.version>0.6.12</msgpack.version>
-
+		<jbossmarshling.version>2.0.0.Beta2</jbossmarshling.version>
+		<protobuf.version>2.6.1</protobuf.version>
+		<sigar.version>1.6.4</sigar.version>
+		<httpclient.version>4.3.1</httpclient.version>
    </properties>
 		  <dependencies>
 		  <!-- MySql -->
@@ -170,7 +173,42 @@
 		    <artifactId>msgpack</artifactId>
 		    <version>${msgpack.version}</version>
 		</dependency>
+		<!-- jbossMarshling -->
+		<dependency>
+		    <groupId>org.jboss.marshalling</groupId>
+ 		    <artifactId>jboss-marshalling-serial</artifactId>
+		    <version>${jbossmarshling.version}</version>
+		</dependency>
+				<!-- protobuf -->
+		<dependency>
+		    <groupId>com.google.protobuf</groupId>
+		    <artifactId>protobuf-java</artifactId>
+		    <version>${protobuf.version}</version>
+		</dependency>
+				<!-- sigar -->
+		<dependency>
+		    <groupId>org.fusesource</groupId>
+		    <artifactId>sigar</artifactId>
+		    <version>${sigar.version}</version>
+		</dependency>
+			<!-- httpcClient -->
+		<dependency>
+		    <groupId>org.apache.httpcomponents</groupId>
+		    <artifactId>httpclient</artifactId>
+		    <version>${httpclient.version}</version>
+		</dependency>
 		
+		<dependency>
+		    <groupId>org.apache.httpcomponents</groupId>
+		    <artifactId>httpclient-cache</artifactId>
+		    <version>${httpclient.version}</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>org.apache.httpcomponents</groupId>
+		    <artifactId>httpmime</artifactId>
+		    <version>${httpclient.version}</version>
+		</dependency>
 		
 		<!-- netty相关 end -->
 		
