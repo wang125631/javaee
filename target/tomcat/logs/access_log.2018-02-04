@@ -1,0 +1,17 @@
+0:0:0:0:0:0:0:1 - - [04/Feb/2018:19:13:01 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 500 4422 http-bio-8080-exec-1 812
+0:0:0:0:0:0:0:1 - - [04/Feb/2018:19:13:02 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-2 0
+0:0:0:0:0:0:0:1 - - [04/Feb/2018:19:15:26 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 200 521 http-bio-8080-exec-4 1365
+0:0:0:0:0:0:0:1 - - [04/Feb/2018:19:15:52 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 200 521 http-bio-8080-exec-5 5
+0:0:0:0:0:0:0:1 - - [04/Feb/2018:19:15:53 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 200 521 http-bio-8080-exec-6 9
+0:0:0:0:0:0:0:1 - - [04/Feb/2018:19:26:40 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 500 4422 http-bio-8080-exec-8 274
+0:0:0:0:0:0:0:1 - - [04/Feb/2018:19:31:46 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 500 4425 http-bio-8080-exec-9 90
+0:0:0:0:0:0:0:1 - - [04/Feb/2018:19:31:48 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 200 521 http-bio-8080-exec-10 17
+0:0:0:0:0:0:0:1 - - [04/Feb/2018:19:31:52 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 500 4425 http-bio-8080-exec-10 26
+0:0:0:0:0:0:0:1 - - [04/Feb/2018:19:31:53 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 200 521 http-bio-8080-exec-2 5
+0:0:0:0:0:0:0:1 - - [04/Feb/2018:19:31:54 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 200 521 http-bio-8080-exec-2 3
+0:0:0:0:0:0:0:1 - - [04/Feb/2018:19:31:55 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 200 521 http-bio-8080-exec-2 3
+0:0:0:0:0:0:0:1 - - [04/Feb/2018:19:31:55 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 200 521 http-bio-8080-exec-2 2
+0:0:0:0:0:0:0:1 - - [04/Feb/2018:19:31:56 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 200 521 http-bio-8080-exec-2 4
+0:0:0:0:0:0:0:1 - - [04/Feb/2018:19:31:56 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 200 521 http-bio-8080-exec-2 4
+0:0:0:0:0:0:0:1 - - [04/Feb/2018:19:31:58 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 500 4425 http-bio-8080-exec-2 74
+0:0:0:0:0:0:0:1 - - [04/Feb/2018:19:32:53 +0800] "GET /javaweb/spring-mvc/demo04/list.do HTTP/1.1" 200 1360 http-bio-8080-exec-9 292

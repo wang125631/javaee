@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
- <%@taglib uri="http://java.sun.com/jstl/core"  prefix="c"%>
+ <%@taglib uri="http://java.sun.com/jsp/jstl/core"  prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,11 +9,8 @@
 </head>
 <body>
 	<a href="list.do"> 显示所有员工信息</a>
-	<c:if test="${ empty requestScope.employees}">
-		没有任何员工信息
-	</c:if>
-	<c:if test="${ !empty requestScope.employees}">
-		<table>
+	
+	 	<table>
 			<tr>
 				<th>id</th>
 				<th>姓名</th>
@@ -23,7 +20,7 @@
 				<th>修改</th>
 				<th>删除</th>
 			<tr>
-			<c:forEach items="${requestScope.employees}" var="emp">
+			<c:forEach items="${employees}" var="emp">
 			<tr>
 				<td>${emp.id} </td>
 				<td>${emp.name} </td>
@@ -35,6 +32,6 @@
 			</tr>
 			</c:forEach>
 		</table>
-	</c:if>
+
 </body>
 </html>
