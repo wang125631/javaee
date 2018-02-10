@@ -25,10 +25,10 @@ public class DepartmentDao {
 	
 		departments = new HashMap<Integer,Department>();
 	
-		departments.put(01, new Department(01, "Name-01"));
-		departments.put(02, new Department(02, "Name-02"));
-		departments.put(03, new Department(03, "Name-03"));
-		departments.put(04, new Department(04, "Name-04"));		
+		departments.put(01, new Department(1, "Name-01"));
+		departments.put(02, new Department(2, "Name-02"));
+		departments.put(03, new Department(3, "Name-03"));
+		departments.put(04, new Department(4, "Name-04"));		
 	}
 	
 	public Collection<Department> getDepartments(){

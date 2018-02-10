@@ -15,6 +15,9 @@
 		<property name="suffix" value=".jsp"></property>
 	</bean>
 	
+	<!-- 资源处理 -->
+	<mvc:default-servlet-handler/>
+	
 	<!-- 开启注解 -->
 	<mvc:annotation-driven/>
 	

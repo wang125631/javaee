@@ -4,8 +4,9 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.wpx.springmvc.demo04.dao.EmployeeDao;
 import com.wpx.springmvc.demo04.vo.Employee;
@@ -23,34 +24,49 @@ public class EmployeeHandler {
 
 	@Autowired
 	private EmployeeDao employeeDao;
+	
+
 	/**
 	 * 
 	 * 显示所有客户信息
 	 */
-	@RequestMapping("/list")
+	@RequestMapping(value="/emp",method=RequestMethod.GET)
 	public String list(Map<String,Object> map){
 		map.put("employees", employeeDao.getAll());
 		return "demo04/list";
 	}
+	
+	/**
+	 * 根据客户id查询客户
+	 */
+	@RequestMapping(value="/emp/{id}",method=RequestMethod.GET)
+	public String get(@PathVariable Integer id,Map<String,Object> map) {
+		map.put("employee",employeeDao.getEmployeeById(id));
+		return "demo04/update";
+	}
+	
 	/**
 	 * 添加客户
 	 */
+	@RequestMapping(value="/emp",method=RequestMethod.POST)
 	public String add(Employee employee) {
 		employeeDao.save(employee);
-		return "demo04/list";
+		return "redirect:emp";
 	}
 	/**
 	 * 修改客户
 	 */
+	@RequestMapping(value="/emp",method=RequestMethod.PUT)
 	public String update(Employee empolyee) {
 		employeeDao.updateEmployee(empolyee);
-		return "demo04/list";
+		return "redirect:emp";
 	}
 	/**
 	 * 删除客户
 	 */
-	public String detele(Integer id) {
+	@RequestMapping(value="/emp/{id}",method=RequestMethod.DELETE)
+	public String detele(@PathVariable Integer id) {
 		employeeDao.deleteEmployeeById(id);
-		return "demo04/list";
+		return "redirect:emp";
 	}
 }

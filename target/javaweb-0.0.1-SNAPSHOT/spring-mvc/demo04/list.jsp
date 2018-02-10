@@ -6,9 +6,25 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>显示所有的员工信息</title>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.4.2.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".delete").click(function(){
+			var href=$(this).attr("href");
+			$("form").attr("action",href).submit();
+			return false;
+		});
+	})
+</script>
 </head>
 <body>
-	<a href="list.do"> 显示所有员工信息</a>
+	<form action="" method="post">
+			<input type="hidden" name="_method" value="DELETE">
+	</form>
+
+
+
+	<a href="emp"> 显示所有员工信息</a>
 	
 	 	<table>
 			<tr>
@@ -27,11 +43,11 @@
 				<td>${emp.email} </td>
 				<td>${emp.gender}</td>
 				<td>${emp.department.departmentName} </td>
-				<td><a href="">修改</a> </td>
-				<td><a href="">删除</a> </td>
+				<td><a href="emp/${emp.id}">修改</a> </td>
+				<td><a class="delete" href="emp/${emp.id}" >删除</a> </td>
 			</tr>
 			</c:forEach>
 		</table>
-
+	<a  href="./add.jsp">添加客户</a>
 </body>
 </html>

@@ -27,6 +27,8 @@
 		<protobuf.version>2.6.1</protobuf.version>
 		<sigar.version>1.6.4</sigar.version>
 		<httpclient.version>4.3.1</httpclient.version>
+		<!-- linux相关 -->
+		<activemq.version>5.11.1</activemq.version>
    </properties>
 		  <dependencies>
 		  <!-- MySql -->
@@ -161,6 +163,7 @@
 			<version>${struts2.version}</version>
 		</dependency>
 		<!-- struts2 end -->
+		
 		<!-- netty相关 start -->
 		<dependency>
 		    <groupId>io.netty</groupId>
@@ -209,9 +212,17 @@
 		    <artifactId>httpmime</artifactId>
 		    <version>${httpclient.version}</version>
 		</dependency>
-		
 		<!-- netty相关 end -->
 		
+		<!-- linux相关  start-->
+		
+		<dependency>
+		    <groupId>org.apache.activemq</groupId>
+		    <artifactId>activemq-all</artifactId>
+		    <version>${activemq.version}</version>
+		</dependency>
+		
+		<!-- linux相关  end -->
 	  </dependencies>
 	  
 	  
