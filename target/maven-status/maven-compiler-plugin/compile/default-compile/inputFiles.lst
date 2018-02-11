@@ -45,6 +45,7 @@ D:\nodejs\javaee\src\main\java\com\wpx\spring\demo18\AccountServiceImpl.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo19\SpringTest19.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo12\SpringTest12.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo11\SpringTest11.java
+D:\nodejs\javaee\src\main\java\com\wpx\springmvc\User.java
 D:\nodejs\javaee\src\main\java\com\wpx\netty\demo07\googleprotobuf\SubscribeRespProto.java
 D:\nodejs\javaee\src\main\java\com\wpx\springmvc\demo03\PathVariableTest.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo20\SpringTes20.java
@@ -126,7 +127,9 @@ D:\nodejs\javaee\src\main\java\com\wpx\netty\demo04\ServerHandler.java
 D:\nodejs\javaee\src\main\java\com\wpx\netty\demo09\HttpUploadClient.java
 D:\nodejs\javaee\src\main\java\com\wpx\servlet\demo06\ServletConfigObject.java
 D:\nodejs\javaee\src\main\java\com\wpx\netty\demo06\fixedlengthfrmaedecoder\Client.java
+D:\nodejs\javaee\src\main\java\com\wpx\springmvc\demo05\SpringTest.java
 D:\nodejs\javaee\src\main\java\com\wpx\hibernate\demo05\Order.java
+D:\nodejs\javaee\src\main\java\com\wpx\springmvc\demo06\UserConverter.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo18\AccountService.java
 D:\nodejs\javaee\src\main\java\com\wpx\threadpool\demo01\ThreadLock.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo07\SpringTest07.java
@@ -193,6 +196,7 @@ D:\nodejs\javaee\src\main\java\com\wpx\spring\demo07\UserService.java
 D:\nodejs\javaee\src\main\java\com\wpx\struts2\demo03\ModDriven.java
 D:\nodejs\javaee\src\main\java\com\wpx\springmvc\demo04\vo\Department.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo20\AccountService.java
+D:\nodejs\javaee\src\main\java\com\wpx\springmvc\demo06\TestConversionService.java
 D:\nodejs\javaee\src\main\java\com\wpx\netty\demo07\googleprotobuf\Server.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo03\Product.java
 D:\nodejs\javaee\src\main\java\com\wpx\struts2\demo02\Pojo.java

@@ -8,5 +8,8 @@
 </head>
 <body>
 	<h1>Success Page</h1>
+	${message}
+	<br>
+	${sessionScope.user}
 </body>
 </html>

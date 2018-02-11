@@ -161,6 +161,8 @@ springmvc
 	spring.demo02 -> springMVC的工作流程
 	spring.demo03 -> springMVC的PathVariable注解
 	spring.demo04 -> RESTful的CRUD
+	spring.demo05 -> springmvc常用注解说明
+	spring.demo06 -> springmvc类型转换器
 
 jvm
 

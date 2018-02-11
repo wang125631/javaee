@@ -15,6 +15,15 @@
 		<property name="suffix" value=".jsp"></property>
 	</bean>
 	
+	<!-- 配置ConversionService -->
+	<bean id="conversionServiceFactoryBean" class="org.springframework.context.support.ConversionServiceFactoryBean">
+		<property name="converters" >
+			<set>
+				<ref bean="userConverter"/>
+			</set>
+		</property>
+	</bean>
+	
 	<!-- 资源处理 -->
 	<mvc:default-servlet-handler/>
 	
