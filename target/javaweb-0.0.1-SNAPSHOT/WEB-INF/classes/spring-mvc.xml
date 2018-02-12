@@ -16,7 +16,7 @@
 	</bean>
 	
 	<!-- 配置ConversionService -->
-	<bean id="conversionServiceFactoryBean" class="org.springframework.context.support.ConversionServiceFactoryBean">
+	<bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
 		<property name="converters" >
 			<set>
 				<ref bean="userConverter"/>
@@ -28,6 +28,6 @@
 	<mvc:default-servlet-handler/>
 	
 	<!-- 开启注解 -->
-	<mvc:annotation-driven/>
+	<mvc:annotation-driven conversion-service="conversionService"/>
 	
 </beans>

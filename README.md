@@ -163,6 +163,9 @@ springmvc
 	spring.demo04 -> RESTful的CRUD
 	spring.demo05 -> springmvc常用注解说明
 	spring.demo06 -> springmvc类型转换器
+	spring.demo07 -> springmvc对JSR-303的支持
+	spring.demo08 -> springmvc文件上传
+	spring.demo09 -> springmvc拦截器
 
 jvm
 

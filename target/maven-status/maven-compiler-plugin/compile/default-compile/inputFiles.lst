@@ -82,6 +82,7 @@ D:\nodejs\javaee\src\main\java\com\wpx\netty\demo02\ExecutorPoolHandler.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo02\Bean01.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo05\Car02.java
 D:\nodejs\javaee\src\main\java\com\wpx\jdbc\demo07\AccountDaooImpl.java
+D:\nodejs\javaee\src\main\java\com\wpx\springmvc\demo07\Person.java
 D:\nodejs\javaee\src\main\java\com\wpx\threadpool\demo08\ExecutorsTest.java
 D:\nodejs\javaee\src\main\java\com\wpx\spring\demo17\User.java
 D:\nodejs\javaee\src\main\java\com\wpx\servlet\demo05\InitParameter.java
@@ -114,6 +115,7 @@ D:\nodejs\javaee\src\main\java\com\wpx\jdbc\demo07\JdbcTest.java
 D:\nodejs\javaee\src\main\java\com\wpx\servlet\demo23\FilterLogin.java
 D:\nodejs\javaee\src\main\java\com\wpx\servlet\demo11\JdbcUtils.java
 D:\nodejs\javaee\src\main\java\com\wpx\hibernate\demo02\Hibernate02.java
+D:\nodejs\javaee\src\main\java\com\wpx\springmvc\demo08\UploadTest.java
 D:\nodejs\javaee\src\main\java\com\wpx\struts2\demo09\OgnlAction03.java
 D:\nodejs\javaee\src\main\java\com\wpx\netty\demo07\googleprotobuf\ServerHandler.java
 D:\nodejs\javaee\src\main\java\com\wpx\netty\demo07\jbossmarshalling\ClientHandler.java
@@ -162,6 +164,7 @@ D:\nodejs\javaee\src\main\java\com\wpx\jdbc\demo05\Demo01.java
 D:\nodejs\javaee\src\main\java\com\wpx\servlet\demo16\ServletCheckCode.java
 D:\nodejs\javaee\src\main\java\com\wpx\struts2\demo05\UserAction.java
 D:\nodejs\javaee\src\main\java\com\wpx\netty\demo07\messagepack\ClientHandler.java
+D:\nodejs\javaee\src\main\java\com\wpx\springmvc\demo07\SpringmvcTest.java
 D:\nodejs\javaee\src\main\java\com\wpx\servlet\demo17\ServletCart.java
 D:\nodejs\javaee\src\main\java\com\wpx\servlet\demo21\PageBean.java
 D:\nodejs\javaee\src\main\java\com\wpx\threadpool\demo01\ReentryLock.java

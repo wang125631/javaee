@@ -10,7 +10,8 @@
 
 
 
-<form action="testUserConverter">
+<form action="testUserConverter" method="post">
+
 	<input type="text" name="user" value="1-wangpx-21">
 	<input type="submit" value="提交">
 </form>
