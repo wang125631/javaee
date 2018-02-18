@@ -1,9 +1,0 @@
-option java_package = "com.wpx.netty.demo07.googleprotobuf";  
-option java_outer_classname = "SubscribeReqProto";  
-  
-message SubscribeReq{  
-    required int32 subReqID = 1;  
-    required string userName = 2;  
-    required string productName = 3;  
-    repeated string address = 4;  
-} 

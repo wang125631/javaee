@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 引入约束 -->
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ <hibernate-mapping >
+ 	<!-- 建立类与表的映射 -->
+	<!-- class标签:用于映射类与表的关系 name :类的全路径  table:表名称 -->
+	<class name="com.wpx.hibernate.demo08.Order" table="t_order08">
+		
+		<id name="oid" column="oid">
+			<generator class="native"/>
+		</id>
+		
+		<property name="addr"/>
+		
+		<many-to-one name="customer"  lazy="false" fetch="join" class="com.wpx.hibernate.demo08.Customer"  column="cno" cascade="save-update" >
+			
+		</many-to-one>
+	
+	</class>
+ </hibernate-mapping>

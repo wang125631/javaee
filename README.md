@@ -202,11 +202,9 @@ netty
 linux
 	
 	linux.demo01 -> linux³£ÓÃÃüÁî
-	linux.demo02 -> activemq´î½¨
-	linux.demo03 -> 
-	linux.demo04 -> 
-	linux.demo05 -> 
-	linux.demo06 -> 
-	linux.demo07 -> 
+
+storm
+	
+	storm.demo01 -> 
 	
 	

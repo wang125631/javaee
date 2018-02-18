@@ -29,6 +29,9 @@
 		<httpclient.version>4.3.1</httpclient.version>
 		<!-- linux相关 -->
 		<activemq.version>5.11.1</activemq.version>
+		
+		<!-- storm相关 -->
+		<storm.version>1.0.2</storm.version>
    </properties>
 		  <dependencies>
 		  <!-- MySql -->
@@ -224,13 +227,21 @@
 		
 		<!-- linux相关  end -->
 		<!-- springmvc 数据校验 -->
-
 		<dependency>
 		    <groupId>org.hibernate</groupId>
 		    <artifactId>hibernate-validator</artifactId>
 		    <version>5.4.1.Final</version>
 		</dependency>
+		<!-- storm start -->
+				
+		<dependency>
+		    <groupId>org.apache.storm</groupId>
+		    <artifactId>storm-core</artifactId>
+		    <version>${storm.version}</version>
+		    <scope>provided</scope>
+		</dependency>
 		
+		<!-- storm end -->
 		
 	  </dependencies>
 	  
