@@ -1,16 +1,16 @@
 package com.wpx.storm.demo01.topology;
 
-import org.apache.storm.Config;
-import org.apache.storm.LocalCluster;
-import org.apache.storm.StormSubmitter;
-import org.apache.storm.generated.AlreadyAliveException;
-import org.apache.storm.generated.AuthorizationException;
-import org.apache.storm.generated.InvalidTopologyException;
-import org.apache.storm.topology.TopologyBuilder;
 
 import com.wpx.storm.demo01.bolt.PrintBolt;
 import com.wpx.storm.demo01.bolt.WriteBolt;
 import com.wpx.storm.demo01.spout.Spout;
+
+import backtype.storm.Config;
+import backtype.storm.LocalCluster;
+import backtype.storm.StormSubmitter;
+import backtype.storm.generated.AlreadyAliveException;
+import backtype.storm.generated.InvalidTopologyException;
+import backtype.storm.topology.TopologyBuilder;
 
 /**
  * 
@@ -21,7 +21,7 @@ import com.wpx.storm.demo01.spout.Spout;
 
 public class Topology02 {
 
-	public static void main(String[] args) throws InterruptedException, AlreadyAliveException, InvalidTopologyException, AuthorizationException {
+	public static void main(String[] args) throws InterruptedException, AlreadyAliveException, InvalidTopologyException{
 			Config config = new Config();
 			config.setNumWorkers(2);//设置使用两个工作进程
 			config.setDebug(false);

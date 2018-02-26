@@ -205,6 +205,6 @@ linux
 
 storm
 	
-	storm.demo01 -> 
+	storm.demo01 -> StormПа№ШёЕДо
 	
 	
