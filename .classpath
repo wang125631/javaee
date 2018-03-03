@@ -31,5 +31,7 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="src/main/webapp/WEB-INF/lib/fastdfs_client_v1.20.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
