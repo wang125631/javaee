@@ -202,9 +202,40 @@ netty
 linux
 	
 	linux.demo01 -> linux常用命令
+	linux.demo02 -> shell编程
+	
 
 storm
 	
 	storm.demo01 -> Storm相关概念
+	storm.demo02 -> Storm字数统计
+
+interview 
 	
+	setrelevant.Framework -> JAVA集合架构及底层实现
+
+oracle
+	
+	base.basicquery -> oracle基础查询
+	base.filtersorting -> 过滤和排序
+	base.datahanding -> 数据处理
+	base.tableoperation -> 表操作
+	base.viewandindex -> 视图和索引
+	plsql.helloworld -> 初识plsql程序
+	plsql.var -> plsql中变量类型
+	plsql.if -> plsql中判断
+	plsql.loop -> plsql中循环方式
+	plsql.cursor -> plsql中游标使用
+	plsql.demo01 -> plsql实例一
+	plsql.demo02 -> plsql实例二
+	plsql.demo03 -> plsql实例三
+	plsql.myfirstprocedure -> 第一个procedure
+	proandtri.procedurewithparameter -> 带请求参数的procedure
+	proandtri.package -> plsql程序包
+	proandtri.function -> plsql函数
+	proandtri.JdbcUtils -> oracle 的jdbc连接
+	proandtri.Client -> 使用Java测试调用oracle函数,存储过程,程序包
+	proandtri.myfirsttriggr -> 第一触发器
+	proandtri.demo01 -> 触发器实例一
+	proandtri.demo02 -> 触发器实例二
 	

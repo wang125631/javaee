@@ -2,7 +2,7 @@
  * 
  *  1.proceduerwithparameter.sql(返回out参数)
  *  2.function.sql 函数
- *  3.out.sql(返回集合)
+ *  3.package.sql(返回集合)
  *  
  *  4.myfirsttrigger.sql (触发器)
  *  5.demo01.sql(触发器应用一)
