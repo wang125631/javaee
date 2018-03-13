@@ -44,7 +44,7 @@ public class CodeBlock {
 		
 		final CodeBlock cb=new CodeBlock();
 		 new Thread( () ->  { cb.method01();},"t1").start();
-		 new Thread( () ->  { cb.method02();cb.method02();},"t2").start();
+		 new Thread( () ->  { cb.method02();},"t2").start();
 		 new Thread( () ->  { cb.method03();},"t3").start();
 		 
 	}

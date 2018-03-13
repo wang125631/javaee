@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace命名空间 对sql语句进行隔离方便管理mapper 
+开发dao方式使用namespace 有特殊作用 mapper代理开发将namespace指定为mapper接口的  -->
+<mapper namespace="demo01">
+	<!-- 在mapper.xml文件配置中配置很多的sql语句,执行每个sql语句时
+		封装为MappedStatement对象,mapper.xml以
+	 -->
+	 
+	 <!-- 插入用户信息 -->
+	 <insert id="insertUser" parameterType="com.wpx.mybatis.demo01.vo.Person">
+	 	insert into Person(id,name,birthday,sex,address) values(#{id},#{name},#{birthday},#{sex},#{address})
+	 </insert>
+	 <!-- 根据id查询用户 信息-->
+	 <select id="findUserById" parameterType="int" resultType="com.wpx.mybatis.demo01.vo.Person">
+	 	select * from  Person where id=#{id}
+	 </select>
+	 <!-- 根据名字模糊查询 -->
+	 <select id="findUserByName" parameterType="String" resultType="com.wpx.mybatis.demo01.vo.Person">
+	 	select * from Person where name like #{name}
+	 </select>
+	 <!-- 更新操作 -->
+	 <update id="updateUserById" parameterType="com.wpx.mybatis.demo01.vo.Person">
+	 	 update Person set name=#{name},sex=#{sex},birthday=#{birthday},address=#{address}  where id =#{id}
+	 </update>
+	 
+	 <delete id="deleteUserById" parameterType="int">
+	 	delete from Person where id = #{id}
+	 </delete>
+</mapper>

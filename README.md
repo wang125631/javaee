@@ -239,3 +239,7 @@ oracle
 	proandtri.demo01 -> 触发器实例一
 	proandtri.demo02 -> 触发器实例二
 	
+Mybatis(Oracle)
+	
+	demo01 -> 基于mybatis的增删改查
+	demo02 -> 传统Dao开发模式

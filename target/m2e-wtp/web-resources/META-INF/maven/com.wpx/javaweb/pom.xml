@@ -32,6 +32,9 @@
 		
 		<!-- storm相关 -->
 		<storm.version>0.9.2-incubating</storm.version>
+		<!-- mybatis 相关 -->
+		<mybatis.version>3.4.6</mybatis.version>
+		<oracle.version>12.2.0.1</oracle.version>
    </properties>
 		  <dependencies>
 		  <!-- MySql -->
@@ -242,10 +245,25 @@
 		</dependency>
 		
 		<!-- storm end -->
-	  <!-- oracle start -->
-		
+	  <!-- mybatis start -->
 
-	  <!-- oracle end -->
+	<dependency>
+	    <groupId>org.mybatis</groupId>
+	    <artifactId>mybatis</artifactId>
+	    <version>${mybatis.version}</version>
+	</dependency>
+	
+
+	<dependency>
+	    <groupId>com.github.noraui</groupId>
+	    <artifactId>ojdbc8</artifactId>
+	    <version>${oracle.version}</version>
+	</dependency>
+
+	
+		
+	  <!-- mybatis end -->
+	  
 	  </dependencies>
 	  
 

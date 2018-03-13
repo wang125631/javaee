@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 
+		配置内容和顺序如下:
+		
+		properties(属性)
+		settings(全局配置参数)
+		typeAliases(类别别名)
+		typeHandlers(类型处理器)
+		objectFactory(对象工厂)
+		pligins(插件)
+		environments(环境集合属性对象)
+			environment(环境子属性对象)
+				transactionManager(事务管理)
+				dataSource(数据源)
+		mapper(映射器)
+	 -->
+
+
+	<!-- 属性定义 加载properties文件 在properties标签中配置属性值 
+	<properties resource="db.properties">
+	</properties> -->
+	<environments default="development">
+		<environment id="development">
+			<!-- 事务管理配置 -->
+			<transactionManager type="JDBC"></transactionManager>
+			<!-- 数据库连接池 -->
+			<dataSource type="POOLED">
+				<property name="driver" value="oracle.jdbc.OracleDriver"/>
+				<property name="url" value="jdbc:oracle:thin:@127.0.0.1:1521/root"/>
+				<property name="username" value="scott"/>
+				<property name="password" value="tiger"/>
+			</dataSource>
+		</environment>
+	</environments>
+	
+	<!-- 加载mapper文件 -->
+	<mappers>
+	 <mapper resource="mybatis/sqlmap/PersonMapper.xml"/> 
+	 <package name="com.wpx.mybatis.demo03.mapper"/>
+		
+	</mappers>
+	
+</configuration>

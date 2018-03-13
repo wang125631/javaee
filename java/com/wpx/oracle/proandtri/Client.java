@@ -6,9 +6,8 @@ import java.sql.ResultSet;
 
 import org.junit.Test;
 
-import oracle.jdbc.driver.OracleCallableStatement;
-import oracle.jdbc.driver.OracleTypes;
-import oracle.sql.NUMBER;
+import oracle.jdbc.OracleCallableStatement;
+import oracle.jdbc.OracleTypes;
 /**
  * javaµ÷ÓÃOracleÖÐprocedure
  * 
