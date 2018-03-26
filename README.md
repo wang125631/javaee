@@ -24,6 +24,8 @@ js闭包 : http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.htm
 	
 #js操作dom
 
+
+
 demo01.html -> [获取dom节点](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo02/demo01.html
 
 demo02.html -> [创建dom节点](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo02/demo02.html
@@ -87,6 +89,7 @@ demo09.html -> [遍历节点](https://github.com/wang125631/javaee/tree/master/src/m
 demo10.html -> [包裹节点](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo04/demo10.html)
 	
 #JQuery对ajax的支持   (此部分需在服务器环境下 maven下tomcat运行指令 tomcat7:run)
+
 
 demo01.html -> [ajax方法的调用]
 (https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo05/demo01.html)
