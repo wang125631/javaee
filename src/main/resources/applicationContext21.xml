@@ -31,5 +31,6 @@
 	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
 		<property name="dataSource" ref="druidDataSource"></property>
 	</bean>
+	
 	<tx:annotation-driven transaction-manager="transactionManager"/>
 </beans>

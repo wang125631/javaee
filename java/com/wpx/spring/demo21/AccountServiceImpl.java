@@ -1,7 +1,5 @@
 package com.wpx.spring.demo21;
 
-
-
 import org.springframework.transaction.annotation.Transactional;
 
 public class AccountServiceImpl implements AccountService{

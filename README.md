@@ -1,85 +1,131 @@
 # javaee
 
-demo01 -> js基础
+#js础
 
-	demo01.html -> js的动态/匿名函数
-	demo02.html -> js的全局/局部
-	demo03.html -> String对象
-	demo04.html -> Array对象
-	demo05.html -> Date日期对象
-	demo06.html -> Math对象
-	demo07.html -> 全局函数
-	demo08.html -> Bom对象
-	demo09.html -> window对象
-	js闭包 : http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html
+demo01.html -> [js的动态/匿名函数](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo01/demo01.html)
+
+demo02.html -> [js的全局/局变量](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo01/demo02.html)
+
+demo03.html -> [String对象](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo01/demo03.html)
+
+demo04.html -> [Array对象](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo01/demo04.html)
+
+demo05.html -> [Date日期对象](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo01/demo05.html)
+
+demo06.html -> [Math对象](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo01/demo06.html)
+
+demo07.html -> [全局函数](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo01/demo07.html)
+
+demo08.html -> [Bom对象](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo01/demo08.html)
+
+demo09.html -> [window对象](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo01/demo09.html)
+
+js闭包 : http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html
 	
-demo02 -> js操作dom
+#js操作dom
 
-	demo01.html -> 获取dom节点
-	demo02.html -> 创建dom节点
-	demo03.html -> Element对象
-	demo04.html -> Node对象
-	demo05.html -> innerHTML
-	demo06.html -> 全选/反选
-	demo07.html -> 下拉列表左右添加
-	demo08.html -> 省市二级联动
+demo01.html -> [获取dom节点](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo02/demo01.html
 
-demo03 -> JQuery选择器
+demo02.html -> [创建dom节点](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo02/demo02.html
 
-	demo01.html -> JQuery基础 
-	demo02.html -> JQuery选择器--基本选择器
-	demo03.html -> JQuery选择器--层次选择器
-	demo04.html -> JQuery选择器--基本过滤选择器
-	demo05.html -> JQuery选择器--内容过滤选择器 
-	demo06.html -> JQuery选择器--可见性过滤选择器 
-	demo07.html -> JQuery选择器--属性选择器
-	demo08.html -> JQuery选择器--子元素选择器
-	demo09.html -> JQuery选择器--表单对象属性过滤选择器
-	demo10.html -> JQuery选择器--表单选择器
+demo03.html -> [Element对象](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo02/demo03.html
 
-demo04 -> JQuery操作Dom
+demo04.html -> [Node对象](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo02/demo04.html)
 
-	demo01.html -> 查找节点
-	demo02.html -> 创建节点
-	demo03.html -> 内部插入节点
-	demo04.html -> 外部插入节点
-	demo05.html -> 删除节点
-	demo06.html -> 复制节点
-	demo07.html -> 替换节点
-	demo08.html -> 样式操作
-	demo09.html -> 遍历节点
-	demo10.html -> 包裹节点
+demo05.html -> [innerHTML](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo02/demo05.html)
+
+demo06.html -> [全选/反选](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo02/demo06.html)
+
+demo07.html -> [下拉列表左右添加](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo02/demo07.html)
+
+demo08.html -> [省市二级联动](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo02/demo08.html)
+
+#JQuery选择器
+
+demo01.html -> [JQuery基础 ](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo03/demo01.html)
+
+
+demo02.html -> [JQuery选择器--基本选择器](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo03/demo02.html)
+
+demo03.html -> [JQuery选择器--层次选择器](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo03/demo03.html)
+
+demo04.html -> [JQuery选择器--基本过滤选择器](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo03/demo04.html)
+
+demo05.html -> [JQuery选择器--内容过滤选择器](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo03/demo05.html)
+
+demo06.html -> [JQuery选择器--可见性过滤选择器 ](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo03/demo06.html)
+
+demo07.html -> [JQuery选择器--属性选择器](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo03/demo07.html)
 	
-demo05 -> JQuery对ajax的支持   (此部分需在服务器环境下 maven下tomcat运行指令 tomcat7:run)
+demo08.html -> [JQuery选择器--子元素选择器](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo03/demo08.html)
 
-	demo01.html -> ajax方法的调用
-	demo02.html -> 异步提交表单
-	demo03.html -> get
-	demo04.html -> getJSON
-	demo05.html -> load方法的调用
-	demo06.html -> post方法的调用
-	demo07.html -> getScript
+demo09.html -> [JQuery选择器--表单对象属性过滤选择器](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo03/demo09.html)
+
+demo10.html -> [JQuery选择器--表单选择器](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo03/demo10.html)
+
+#JQuery操作Dom
+
+
+demo01.html -> [查找节点](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo04/demo01.html)
+
+demo02.html -> [创建节点](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo04/demo02.html)
+
+demo03.html -> [内部插入节点](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo04/demo03.html)
+
+demo04.html -> [外部插入节点](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo04/demo04.html)
+
+demo05.html -> [删除节点](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo04/demo05.html)
+
+demo06.html -> [复制节点](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo04/demo06.html)
+
+demo07.html -> [替换节点](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo04/demo07.html)
+
+demo08.html -> [样式操作](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo04/demo08.html)
+
+demo09.html -> [遍历节点](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo04/demo09.html)
+
+demo10.html -> [包裹节点](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo04/demo10.html)
+	
+#JQuery对ajax的支持   (此部分需在服务器环境下 maven下tomcat运行指令 tomcat7:run)
+
+demo01.html -> [ajax方法的调用]
+(https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo05/demo01.html)
+
+demo02.html -> [异步提交表单]
+(https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo05/demo02.html)
+
+demo03.html -> [get]
+(https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo05/demo03.html)
+
+demo04.html -> [getJSON](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo05/demo04.html)
+
+demo05.html -> [load方法的调用](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo05/demo05.html)
+
+demo06.html -> [post方法的调用](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo05/demo06.html)
+
+demo07.html -> [getScript](https://github.com/wang125631/javaee/tree/master/src/main/webapp/demo05/demo07.html)
 
 ------------------------------------------专题/框架类--------------------------------------------------
 
-jdbc
+#Jdbc
 
-	jdbc.demo01	-> sql简介/数据库的CRUD(增删改查)
-	jdbc.demo02	-> 数据库表的CRUD
-	jdbc.demo03	-> 表数据的CRUD
-	jdbc.demo04	-> 多表操作
-	SQL Join  https://segmentfault.com/a/1190000000454332
-	jdbc.demo05	-> java操作数据库
-		Emp    -> 封装的实体类
-		Demo01 -> 连接数据库进行查询
-		Demo02 -> 通过prepareStatement插入数据
-		Demo03 -> 修改数据
-		Demo04 -> 删除操作
-		JdbcUtils -> jdbc简单封装
-	jdbc.demo06	-> mysql事务
-	jdbc.demo07	-> jdbc事务处理
+jdbc.demo01	-> [sql简介/数据库的CRUD(增删改查)](https://github.com/wang125631/javaee/tree/master/java/com/wpx/jdbc/demo01)
 
-Servlet(Servlet部分需要修改web.xml)
+jdbc.demo02	-> [数据库表的CRUD](https://github.com/wang125631/javaee/tree/master/java/com/wpx/jdbc/demo02)
+
+jdbc.demo03	-> [表数据的CRUD](https://github.com/wang125631/javaee/tree/master/java/com/wpx/jdbc/demo03)
+
+jdbc.demo04	-> [多表操作](https://github.com/wang125631/javaee/tree/master/java/com/wpx/jdbc/demo04)
+
+SQL Join  https://segmentfault.com/a/1190000000454332
+
+jdbc.demo05	-> [java操作数据库](https://github.com/wang125631/javaee/tree/master/java/com/wpx/jdbc/demo05)
+	
+jdbc.demo06	-> [mysql事务](https://github.com/wang125631/javaee/tree/master/java/com/wpx/jdbc/demo01)
+
+jdbc.demo07	-> [jdbc事务处理](https://github.com/wang125631/javaee/tree/master/java/com/wpx/jdbc/demo01)
+
+#Servlet(Servlet部分需要修改web.xml)
 
 	servlet.demo01 -> Tomcat/服务器简介
 	servlet.demo02 -> 第一个前后端交互案例
