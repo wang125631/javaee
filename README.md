@@ -250,8 +250,7 @@ SQL Join  https://segmentfault.com/a/1190000000454332
 
 [Hibernate的缓存 ](https://github.com/wang125631/javaee/tree/master/java/com/wpx/hibernate/demo04)
 
-[Hibernate关系映射---一对多]
-(https://github.com/wang125631/javaee/tree/master/java/com/wpx/hibernate/demo05)
+[Hibernate关系映射---一对多](https://github.com/wang125631/javaee/tree/master/java/com/wpx/hibernate/demo05)
 
 [Hibernate关系映射---多对多](https://github.com/wang125631/javaee/tree/master/java/com/wpx/hibernate/demo06)
 
