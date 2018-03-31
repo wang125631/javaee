@@ -1,4 +1,7 @@
-# javaee
+
+>[javacore](https://github.com/wang125631/javacore)
+>>[javaee](https://github.com/wang125631/javaee)
+>>>[big-data](https://github.com/wang125631/big-data)
 
 # js基础
 
@@ -259,51 +262,125 @@ SQL Join  https://segmentfault.com/a/1190000000454332
 [Hibernate的数据检索/检索优化](https://github.com/wang125631/javaee/tree/master/java/com/wpx/hibernate/demo08)
 	
 	
-springmvc 
+# springmvc 
 	
-	spring.demo01 -> springmvc的HelloWorld
-	spring.demo02 -> springMVC的工作流程
-	spring.demo03 -> springMVC的PathVariable注解
-	spring.demo04 -> RESTful的CRUD
-	spring.demo05 -> springmvc常用注解说明
-	spring.demo06 -> springmvc类型转换器
-	spring.demo07 -> springmvc对JSR-303的支持
-	spring.demo08 -> springmvc文件上传
-	spring.demo09 -> springmvc拦截器
+[springmvc的HelloWorld](https://github.com/wang125631/javaee/tree/master/java/com/wpx/springmvc/demo01)
 
-jvm
+[springMVC的工作流程](https://github.com/wang125631/javaee/tree/master/java/com/wpx/springmvc/demo02)
 
-	jvm.demo01 -> GC信息  
-	jvm.demo02 -> SurvivorRatio的配置说明
-	jvm.demo03 -> 堆内存溢出
-	jvm.demo04 -> 栈调用深度
+[springMVC的PathVariable注解](https://github.com/wang125631/javaee/tree/master/java/com/wpx/springmvc/demo03)
 
+[RESTful的CRUD](https://github.com/wang125631/javaee/tree/master/java/com/wpx/springmvc/demo04)
+
+[springmvc常用注解说明](https://github.com/wang125631/javaee/tree/master/java/com/wpx/springmvc/demo05)
+
+[springmvc类型转换器](https://github.com/wang125631/javaee/tree/master/java/com/wpx/springmvc/demo06)
+
+[springmvc对JSR-303的支持](https://github.com/wang125631/javaee/tree/master/java/com/wpx/springmvc/demo07)
+
+[springmvc文件上传](https://github.com/wang125631/javaee/tree/master/java/com/wpx/springmvc/demo08)
+
+[springmvc拦截器](https://github.com/wang125631/javaee/tree/master/java/com/wpx/springmvc/demo09)
+
+# threadpool
 	
-threadpool
+[synchronized关键字](https://github.com/wang125631/javaee/tree/master/java/com/wpx/threadpool/demo01)
+
+[volatile 关键字](https://github.com/wang125631/javaee/tree/master/java/com/wpx/threadpool/demo02)
+
+[wait/notify |模拟Blocking Queue](https://github.com/wang125631/javaee/tree/master/java/com/wpx/threadpool/demo03)
+
+[ThreadLocal](https://github.com/wang125631/javaee/tree/master/java/com/wpx/threadpool/demo04)
+
+[同步/并发类容器](https://github.com/wang125631/javaee/tree/master/java/com/wpx/threadpool/demo05)
+
+[并发的Queue](https://github.com/wang125631/javaee/tree/master/java/com/wpx/threadpool/demo06)
+
+[Master-Worker模式](https://github.com/wang125631/javaee/tree/master/java/com/wpx/threadpool/demo07)
+
+[Executors创建线程池/自定义线程池](https://github.com/wang125631/javaee/tree/master/java/com/wpx/threadpool/demo08)
+
+# jvm
+
+[GC信息 ](https://github.com/wang125631/javaee/tree/master/java/com/wpx/jvm/demo01)
+
+[SurvivorRatio的配置说明](https://github.com/wang125631/javaee/tree/master/java/com/wpx/jvm/demo02)
+
+[堆内存溢出](https://github.com/wang125631/javaee/tree/master/java/com/wpx/jvm/demo03)
+
+[栈调用深度](https://github.com/wang125631/javaee/tree/master/java/com/wpx/jvm/demo04)
+
+# netty
 	
-	threadpool.demo01 -> synchronized关键字 
-	threadpool.demo02 -> volatile 关键字
-	threadpool.demo03 -> wait/notify |模拟Blocking Queue
-	threadpool.demo04 -> ThreadLocal
-	threadpool.demo05 -> 同步/并发类容器
-	threadpool.demo06 -> 并发的Queue
-	threadpool.demo07 -> Master-Worker模式
-	threadpool.demo08 -> Executors创建线程池/自定义线程池
+[传统的BIO](https://github.com/wang125631/javaee/tree/master/java/com/wpx/netty/demo01)
+
+[伪异步的BIO](https://github.com/wang125631/javaee/tree/master/java/com/wpx/netty/demo02)
+
+[非阻塞的NIO](https://github.com/wang125631/javaee/tree/master/java/com/wpx/netty/demo03)
+
+[异步非阻塞的AIO](https://github.com/wang125631/javaee/tree/master/java/com/wpx/netty/demo04)
+
+[使用Netty实现简单通讯](https://github.com/wang125631/javaee/tree/master/java/com/wpx/netty/demo05)
+
+[Netty中粘/拆包问题(行分隔,自定义分隔,固定长度)](https://github.com/wang125631/javaee/tree/master/java/com/wpx/netty/demo06)
+
+[Netty中编/解码问题](https://github.com/wang125631/javaee/tree/master/java/com/wpx/netty/demo07)
+
+[Netty心跳检测](https://github.com/wang125631/javaee/tree/master/java/com/wpx/netty/demo08)
+
+[Netty文件上传](https://github.com/wang125631/javaee/tree/master/java/com/wpx/netty/demo09)
+
+[Netty文件下载](https://github.com/wang125631/javaee/tree/master/java/com/wpx/netty/demo10)
 	
-netty
+# oracle
 	
-	netty.demo01 -> 传统的BIO
-	netty.demo02 -> 伪异步的BIO
-	netty.demo03 -> 非阻塞的NIO
-	netty.demo04 -> 异步非阻塞的AIO
-	netty.demo05 -> 使用Netty实现简单通讯
-	netty.demo06 -> Netty中粘/拆包问题(行分隔,自定义分隔,固定长度)
-	netty.demo07 -> Netty中编/解码问题
-	netty.demo08 -> Netty心跳检测
-	netty.demo09 -> Netty文件上传
-	netty.demo10 -> Netty文件下载
+[oracle的安装及win7下问题解决](https://github.com/wang125631/javaee/tree/master/java/com/wpx/oracle/install)
+
+[oracle基础查询](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/basic/basicquery.sql)
+
+[过滤和排序](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/basic/filtersorting.sql)
+
+[数据处理](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/basic/datahanding.sql)
+
+[表操作](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/basic/tableoperation.sql)
+
+[视图和索引](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/basic/viewandindex.sql)
+
+[初识plsql程序](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/plsql/helloword.sql)
+
+[plsql中变量类型](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/plsql/var.sql)
+
+[plsql中判断](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/plsql/if.sql)
+
+[plsql中循环方式](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/plsql/loop.sql)
+
+[plsql中游标使用](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/plsql/cursor.sql)
+
+[plsql实例一](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/plsql/demo01.sql)
+
+[plsql实例二](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/plsql/demo02.sql)
+
+[plsql实例三](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/plsql/demo03.sql)
+
+[第一个procedure](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/plsql/myfirstprocedure.sql)
+
+[带请求参数的procedure](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/proandtri/procedurewithparameter.sql)
+
+[plsql程序包](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/proandtri/package.sql)
+
+[plsql函数](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/proandtri/function.sql)
+
+[oracle的jdbc连接](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/proandtri/JdbcUtils.java)
+
+[使用Java测试调用oracle函数,存储过程,程序包](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/proandtri/Client.java)
+
+[第一触发器](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/proandtri/myfirsttrigger.sql)
+
+[触发器实例一](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/proandtri/demo01.sql)
+
+[触发器实例二](https://github.com/wang125631/javaee/blob/master/java/com/wpx/oracle/proandtri/demo02.sql)
 	
-linux
+# linux
 	
 	linux.demo01 -> linux常用命令
 	linux.demo02 -> shell编程
@@ -318,30 +395,7 @@ interview
 	
 	setrelevant.Framework -> JAVA集合架构及底层实现
 
-oracle
-	
-	base.basicquery -> oracle基础查询
-	base.filtersorting -> 过滤和排序
-	base.datahanding -> 数据处理
-	base.tableoperation -> 表操作
-	base.viewandindex -> 视图和索引
-	plsql.helloworld -> 初识plsql程序
-	plsql.var -> plsql中变量类型
-	plsql.if -> plsql中判断
-	plsql.loop -> plsql中循环方式
-	plsql.cursor -> plsql中游标使用
-	plsql.demo01 -> plsql实例一
-	plsql.demo02 -> plsql实例二
-	plsql.demo03 -> plsql实例三
-	plsql.myfirstprocedure -> 第一个procedure
-	proandtri.procedurewithparameter -> 带请求参数的procedure
-	proandtri.package -> plsql程序包
-	proandtri.function -> plsql函数
-	proandtri.JdbcUtils -> oracle 的jdbc连接
-	proandtri.Client -> 使用Java测试调用oracle函数,存储过程,程序包
-	proandtri.myfirsttriggr -> 第一触发器
-	proandtri.demo01 -> 触发器实例一
-	proandtri.demo02 -> 触发器实例二
+
 	
 Mybatis(Oracle)
 	
