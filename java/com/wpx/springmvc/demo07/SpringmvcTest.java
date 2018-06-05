@@ -24,7 +24,6 @@ public class SpringmvcTest {
 				System.out.println(error.getField()+" : "+error.getDefaultMessage());
 			}
 		map.put("errors", result);
-		//TODO 为了更好的体验,可以设置回显表单
 		return "demo07/validator";
 		}
 		return SUCCESS;

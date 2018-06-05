@@ -16,7 +16,7 @@ public class FastdfsClientTest {
 	
 	public String conf_filename = "D:\\nodejs\\javaee\\java\\com\\wpx\\linux\\demo03\\fdfs_client.conf"; 
    
-	public String local_filename = "H:\\profile\\profile.docx"; 
+	public String local_filename = "D:\\360\\profile.docx"; 
 
    
     private void saveFile(byte[] b, String path, String fileName) {
