@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <!DOCTYPE validators PUBLIC
+  		"-//Apache Struts//XWork Validator 1.0.3//EN"
+  		"http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+<validators>
+	<!-- 对用户名校验 -->
+	<field name="username">
+		<!-- 不能为空 -->
+		<field-validator type="requiredstring">
+			<message>用户名不能为空</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">5</param>
+			<param name="maxLength">8</param>
+			<message>用户名必须为${minLength} 到${maxLength}</message>
+		</field-validator>
+	</field>
+	<!-- 密码校验 -->
+	<field name="password">
+		<field-validator type="requiredstring">
+			<message>密码不能为空</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">6</param>
+			<param name="maxLength">12</param>
+			<message>密码长度必须为${minLength} 到${maxLength} 之间</message>
+		</field-validator>
+	</field>
+	<!-- 年龄校验 -->
+	<field name="age">
+		<field-validator type="int">
+			<param name="min">0</param>
+			<param name="max">180</param>
+			<message>年龄必须介于 ${min} 到 ${max} 之间</message>
+		</field-validator>
+	</field>
+
+	<!-- 邮箱校验 -->
+	<field name="email">
+		<field-validator type="email">
+			<message>邮箱格式错误!</message>
+		</field-validator>
+	</field>
+
+	<!-- 电话检验 -->
+	<field name="phonenumber">
+		<field-validator type="regex">
+			<param name="regexExpression"><![CDATA[^170[0-9]{8}$]]></param>
+			<message>电话号码限制为170字段</message>
+		</field-validator>
+	</field>
+
+
+</validators>

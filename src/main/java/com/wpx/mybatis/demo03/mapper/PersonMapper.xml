@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wpx.mybatis.demo03.mapper.PersonMapper">
+	<select id="getPersonById" parameterType="int"
+		resultType="com.wpx.mybatis.demo03.vo.Person">
+		select * from Person where id=#{id}
+	</select>
+</mapper>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 引入约束 -->
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<!-- 建立类与表的映射 -->
+	<!-- class标签:用于映射类与表的关系 name :类的全路径 table:表名称 -->
+	<class name="com.wpx.hibernate.demo02.Customer" table="t_customer">
+		<!-- 建立类中属性与表中的字段映射 -->
+		<!-- 唯一标识 -->
+		<!-- 使用id的标签 配置唯一属性 -->
+		<!-- 在<id>标签中配置一个主键的生成策略. -->
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+
+		<!-- 普通属性 -->
+		<!-- property标签:映射类中的普通属性 name:类中的属性名称, column:表中字段名称 -->
+		<!-- type:三种写法 * Java类型 :java.lang.String * Hibernate类型 :string * SQL类型 
+			:不能直接使用type属性,需要子标签<column> * <column name="name" sql-type="varchar(20)"/> -->
+		<property name="name" column="name" type="string" length="20" />
+		<property name="age" column="age" />
+
+
+	</class>
+
+</hibernate-mapping>
