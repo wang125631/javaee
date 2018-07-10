@@ -8,7 +8,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<!-- 在mapper.xml文件配置中配置很多的sql语句,执行每个sql语句时
 		封装为MappedStatement对象,mapper.xml以
 	 -->
-	 
+
 	 <!-- 插入用户信息 -->
 	 <insert id="insertUser" parameterType="com.wpx.mybatis.demo01.vo.Person">
 	 	insert into Person(id,name,birthday,sex,address) values(#{id},#{name},#{birthday},#{sex},#{address})

@@ -4,6 +4,8 @@
 	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
 	
 <hibernate-configuration>
+
+
 <session-factory>
 	<!-- 必须去配置的属性 -->
 	<!-- 配置数据库连接的基本信息: -->
@@ -38,7 +40,10 @@
 	<!-- 使用当前线程中的session -->
 	<property name="hibernate.current_session_context_class">thread</property>
 		
+		
+	<mapping package=""/>
 	<!-- 通知Hibernate加载那些映射文件 -->
 	<mapping resource="com/wpx/hibernate/demo02/Customer.hbm.xml" />
 </session-factory>
+
 </hibernate-configuration>
